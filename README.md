@@ -69,6 +69,64 @@ Mis áreas de expertise incluyen **Site Reliability Engineering** (gestión de C
 
 ## 💼 Experiencia Profesional
 
+### DojoCoding Labs – Freelance Full-Stack & Infrastructure Engineer
+*Mar. 2026 – Actualidad*
+
+**Dojo OS — Plataforma EdTech SaaS (Supabase + React + Edge Functions)**
+- Implementación de security hardening integral: rate limiting en Edge Functions críticas, corrección de políticas RLS excesivamente permisivas, field allowlists contra mass-assignment, y pre-commit SQL linter para prevenir funciones SECURITY DEFINER inseguras
+- Integración de Cloudflare Turnstile CAPTCHA en formularios de signup y password reset
+- Creación de tabla `security_audit_log` e instrumentación de Edge Functions para trazabilidad
+- Escritura de tests de integración pgTAP para validar políticas RLS en tablas críticas
+- Habilitación del chat con AI agent en producción, incluyendo invalidación de queries post-streaming y paso de contexto de cursos (Pathways) al agente
+- Migración de endpoints `/api/chat` → `/api/web-chat` a través de frontend y Edge Functions
+- Centralización de `getSiteUrl()` y `getAppEnv()` para corregir links de email en staging y selección de API keys de Stripe y Sentry
+- Migración de CI/CD workflows a self-hosted runner en Google Compute Engine con ajustes de timeouts
+- Creación de tabla y API client para `review_results`
+- Documentación de hackathon lead magnet playbook y pitch deck templates con Marp
+- Pill de AI disclosure en el chat widget para transparencia de uso de IA
+
+**Dojo Agent — Claude Code Plugin para Gestión Autónoma de Proyectos**
+- Desarrollo de herramientas de integración con Linear: `dojo_linear_create`, `dojo_linear_update`, `dojo_linear_comment`, `dojo_linear_projects`, `dojo_linear_cycles` con parámetros de estado
+- Herramienta `dojo_github_pr_list` + cron endpoint, y `dojo_github_skill_write` para auto-persistencia de skills del agente
+- Endpoint de webhook GitHub para auto-review de PRs
+- Herramienta `dojo_slack_search` para búsqueda de keywords en historial de canales
+- Herramienta `dojo_sql_query` con funciones RPC y descripciones schema-aware para consultas SQL seguras
+- Endpoint `/api/ingest/sync` para re-ingestión atómica de cursos y `/api/ingest/webhook` con GitHub Action template
+- Migración de embeddings de `text-embedding-004` a `gemini-embedding-001` (v1beta → v1), con columnas de source/title
+- Sistema de memoria persistente con normalización de importancia (0.0–1.0) y categorías
+- Sanitización de contenido de mensajes de usuario y descripciones de Linear issues
+- Defensa contra despacho duplicado con dedup persistente cross-replica para Slack
+- Anclaje de datos para prevenir alucinaciones SQL + logging de output en auditoría
+- Implementación de `dojo_startup_incubation_brainstormer` — herramienta de 21 fases para Business Model Canvas
+- Cron endpoint de reporte de issues activos en Linear
+- Suite de 31 tests E2E para graph search y self-healing, más escenarios de hackathon e incubación
+- Estimación de uso de tokens cuando el proveedor no lo reporta
+- Inyección de URLs de infraestructura en contexto del agente para canales internos
+- Disclaimer de recomendación AI en output de developer-match
+
+**Freedom Academy — Infraestructura GCP para Moodle LMS (OpenTofu + Bash)**
+- Diseño e implementación de módulos de infraestructura con OpenTofu: Cloud SQL (MySQL), Memorystore (Redis), y Compute Engine con startup scripts
+- Configuración de elasticidad con Managed Instance Groups, Load Balancer y autoscaler
+- Implementación de Cloud Armor WAF, alertas de monitoreo y estrategia de backups automatizados
+- Migración de PHP 8.1 → 8.2 con verificación SHA256 de tarballs de Moodle
+- Centralización de branding (tokens, colores, emails) y logos i18n EN/ES con tema Moove
+- Configuración de SSL/TLS y migración de dominio `demolabcr.org` → `freedomacademies.org`
+- Scripts de activación SMTP (Resend), reCAPTCHA v2, y verificación de restauración de backups
+- Configuración de `mod_scorm` para paquetes Articulate Rise
+- Exportación de datos de estudiantes con DDL schema y scripts GDPR
+- Documentación completa: credential handover, incident response playbook, deployment runbook, y matriz de roles IAM
+- Entorno local de desarrollo Moodle para testing de migraciones
+
+**Freedom Academy — Suite de Plugins Custom para Moodle 4.5 (PHP)**
+- **Partner Enrol:** Plugin de enrollment con gestión individual de estudiantes (add/remove/view), estadísticas agregadas, tablero kanban de student journey, y exportación CSV con scoping por partner
+- **UTM Tracker:** Rastreo de campañas de marketing con integración a GA4 y Meta Conversions API (CAPI), incluyendo reporte de funnel de rendimiento de campañas y tests HTTP mockeados
+- **Student Journey:** Motor de automatización de journeys con triggers de quiz y grading, emisión de certificados, editor visual de reglas para administradores no técnicos, dashboard de estadísticas y vista de detalle de ejecución, con notificaciones push
+- **Freedom Dashboard:** Dashboard nativo de Moodle con controles de acceso basados en roles (admin/partner/staff), agregadores de datos, vistas personalizadas, y exportación CSV por partner
+- **AI Feedback Engine:** Plugin de retroalimentación impulsada por IA con spike de investigación documentado sobre LLM engines
+- ADR-001 para arquitectura de dashboard: enfoque híbrido plugin nativo + Grafana
+- Corrección de 3 bugs de compatibilidad con Moodle 4.5
+- Hardening de seguridad contra SSRF y hallazgos lógicos de Greptile
+
 ### IBM – Site Reliability Engineer
 *Maximo Application Suite and Maximo Manage*
 *Feb. 2024 – Sept. 2025*
@@ -116,14 +174,17 @@ Mis áreas de expertise incluyen **Site Reliability Engineering** (gestión de C
 
 ## 🚀 Startups & Proyectos Destacados
 
-### 1. KeikoStart – EdTech & Web3
-Plataforma de colaboración educativa descentralizada con **Life Learning Passport** basado en micro-credenciales sobre blockchain (Starknet). Arquitectura modular de 5 capas usando **Flutter, Dart, GraphQL, gRPC, Starknet/Cairo, Redis Streams**.
+### 1. [Vertivo](https://github.com/vertivolatam/monorepo) – AgriTech & IoT
+Startup de agricultura vertical urbana incubada en **Bridge for Billions** (2021). Fabricación y gestión remota de **MicroInvernaderos Aeropónicos Autónomos**. Monorepo con Serverpod backend, Flutter app, Raspberry Pi orchestrator (Balena), EMQX MQTT, K8s + ArgoCD GitOps. Pre-seed de US $9.500 levantado con Auge-UCR. Finalistas con mención honorífica en **Road to Innovate Central America** (Friedrich Naumann Foundation).
 
-### 2. AgroTech Startup – Vertical Farming
-Startup de agricultura vertical urbana incubada en **Bridge for Billions** (2021). Fabricación y gestión remota de **MicroInvernaderos Aeropónicos Autónomos**. Pre-seed de US $9.500 levantado con Auge-UCR. Finalistas con mención honorífica en **Road to Innovate Central America** (Friedrich Naumann Foundation).
-
-### 3. AltruPets – Animal Welfare
+### 2. [AltruPets](https://github.com/altrupets/monorepo) – Animal Welfare
 Aplicación móvil en Flutter para protección animal: coordinación de rescates, hogares de acogida, campañas de crowdfunding y denuncias anónimas de maltrato animal.
+
+### 3. [HabitaNexus](https://github.com/lapc506/habitanexus) – PropTech
+Plataforma de gestión de bienes raíces desarrollada en Dart/Flutter.
+
+### 4. [KeikoStart](https://github.com/keikolatam/dapp-monorepo) – EdTech & Web3
+Plataforma de colaboración educativa descentralizada con **Life Learning Passport** basado en micro-credenciales sobre blockchain (Starknet). Arquitectura modular de 5 capas usando **Flutter, Dart, GraphQL, gRPC, Starknet/Cairo, Redis Streams**.
 
 ---
 
