@@ -286,16 +286,16 @@ Plataforma de colaboración educativa descentralizada con **Life Learning Passpo
 
 ## 🎖️ Certificaciones
 
-- **PIEA 2023** – INCAE Business School & Invermaster Ventures
-- **Innovate Programme 2022** – Friedrich Naumann Foundation
-- **The Leap Incubation Program** – Bridge for Billions (2021)
-- **Scrum Product Owner** – CertiProf (2020)
-- **User Stories Foundation** – CertiProf (2020)
-- **Scrum Foundation Professional** – CertiProf (2020)
-- **Management 3.0 Fundamentals** – F&M Consulting (2020)
-- **Tableau 2019.2 Intermediate** – Prisma Análisis Costa Rica (2019)
-- **Cambridge English B1 CEFR** – University of Cambridge (2013)
-- **Cisco IT Essentials** – Fundación Omar Dengo & Cisco Networking Academy (2011)
+- **PIEA 2023** – [INCAE Business School](https://www.incae.edu/) Executive Education & [Invermaster Ventures](https://invermaster.com/) – Programa de Aceleración y Mentoría de Proyectos Agroindustriales (2023)
+- **Innovate Programme 2022** – [Friedrich Naumann Stiftung für die Freiheit](https://www.freiheit.org/central-america) – Programa de Incubación para Startups en Etapa Temprana (2022)
+- **The Leap Incubation Program** – [Bridge for Billions](https://www.bridgeforbillions.org/incubation-programs/) – Programa de Incubación para Startups en Etapa Temprana (2021)
+- **Scrum Product Owner** – [CertiProf](https://certiprof.com/pages/scrum-product-owner-professional-certificate-spopc) (2020)
+- **User Stories Foundation** – [CertiProf](https://certiprof.com/pages/user-stories-foundation-certificate-usfc) (2020)
+- **Scrum Foundation Professional** – [CertiProf](https://certiprof.com/pages/scrum-foundation-professional-certificate-sfpc) (2020)
+- **Management 3.0 Fundamentals** – [Management 3.0](https://management30.com/workshops/fundamentals-online-workshop/) / F&M Consulting Perú (2020)
+- **Tableau 2019.2 Intermediate** – [Prisma Análisis Costa Rica](https://prisma-analisis.com/) – Preparación para Tableau Desktop Certified Associate (2019)
+- **Cambridge English B1 CEFR** – [University of Cambridge](https://www.cambridgeenglish.org/exams-and-tests/preliminary/) – English for Speakers of Other Languages (2013)
+- **Cisco IT Essentials** – [Cisco Networking Academy](https://www.netacad.com/courses/os-it/it-essentials) & Fundación Omar Dengo (2011)
 
 ---
 
