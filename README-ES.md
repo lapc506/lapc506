@@ -18,176 +18,62 @@ Mis áreas de expertise incluyen **Site Reliability Engineering** (gestión de C
 ## 🛠️ Habilidades Técnicas
 
 ### SRE, DevSecOps & AI
-
-**Containerización:**
-[![OpenShift](https://img.shields.io/badge/Red_Hat_OpenShift-EE0000?style=flat&logo=red-hat-open-shift)](https://docs.openshift.com/)
-[![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)](https://kubernetes.io/docs/)
-[![Minikube](https://img.shields.io/badge/Minikube-326CE5?style=flat&logo=kubernetes&logoColor=white)](https://minikube.sigs.k8s.io/docs/)
-[![Podman](https://img.shields.io/badge/Podman_Desktop-892CA0?style=flat&logo=podman&logoColor=white)](https://podman-desktop.io/docs/intro)
-[![GHCR](https://img.shields.io/badge/GitHub_Container_Registry-181717?style=flat&logo=github)](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
-
-**Automatización:**
-[![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible)](https://docs.ansible.com/)
-[![AWX](https://img.shields.io/badge/AWX-EE0000?style=flat&logo=ansible)](https://ansible.readthedocs.io/projects/awx/en/latest/)
-[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/manual/)
-[![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)](https://learn.microsoft.com/en-us/powershell/)
-[![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://docs.python.org/3/)
-
-**Observabilidad:**
-[![Instana](https://img.shields.io/badge/IBM_Instana-000000?style=flat&logo=ibm)](https://www.ibm.com/docs/en/instana-observability)
-[![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)](https://grafana.com/docs/)
-[![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=flat&logo=datadog&logoColor=white)](https://docs.datadoghq.com/)
-[![Mezmo](https://img.shields.io/badge/Mezmo-4A154B?style=flat)](https://docs.mezmo.com/)
-[![CloudWatch](https://img.shields.io/badge/AWS_CloudWatch-FF4F8B?style=flat&logo=amazon-cloudwatch&logoColor=white)](https://docs.aws.amazon.com/cloudwatch/)
-
-**GitOps & CI/CD:**
-[![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat&logo=argo&logoColor=white)](https://argo-cd.readthedocs.io/)
-[![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat&logo=helm&logoColor=white)](https://helm.sh/docs/)
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)](https://docs.github.com/en/actions)
-[![GitFlow](https://img.shields.io/badge/GitFlow-F05032?style=flat&logo=git&logoColor=white)](https://nvie.com/posts/a-successful-git-branching-model/)
-
-**Infrastructure-as-Code:**
-[![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)](https://developer.hashicorp.com/terraform/docs)
-[![OpenTofu](https://img.shields.io/badge/OpenTofu-FFDA18?style=flat&logo=opentofu&logoColor=black)](https://opentofu.org/docs/)
-[![CloudFormation](https://img.shields.io/badge/AWS_CloudFormation-FF4F8B?style=flat&logo=amazon-web-services&logoColor=white)](https://docs.aws.amazon.com/cloudformation/)
-
-**AWS Cloud:**
-[![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazon-ec2&logoColor=white)](https://docs.aws.amazon.com/ec2/)
-[![IAM](https://img.shields.io/badge/IAM-DD344C?style=flat&logo=amazon-iam&logoColor=white)](https://docs.aws.amazon.com/iam/)
-[![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat&logo=aws-lambda&logoColor=white)](https://docs.aws.amazon.com/lambda/)
-[![SQS](https://img.shields.io/badge/SQS-FF4F8B?style=flat&logo=amazon-sqs&logoColor=white)](https://docs.aws.amazon.com/sqs/)
-[![SNS](https://img.shields.io/badge/SNS-FF4F8B?style=flat&logo=amazon-web-services&logoColor=white)](https://docs.aws.amazon.com/sns/)
-[![Route 53](https://img.shields.io/badge/Route_53-8C4FFF?style=flat&logo=amazon-route-53&logoColor=white)](https://docs.aws.amazon.com/route53/)
-[![IoT Core](https://img.shields.io/badge/IoT_Core-569A31?style=flat&logo=amazon-web-services&logoColor=white)](https://docs.aws.amazon.com/iot/)
-[![SageMaker](https://img.shields.io/badge/SageMaker-A100FF?style=flat&logo=amazon-web-services&logoColor=white)](https://docs.aws.amazon.com/sagemaker/)
-
-**GCP Cloud:**
-[![Cloud SQL](https://img.shields.io/badge/Cloud_SQL-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/sql/docs)
-[![Compute Engine](https://img.shields.io/badge/Compute_Engine-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/compute/docs)
-[![Memorystore](https://img.shields.io/badge/Memorystore-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/memorystore/docs)
-[![Cloud Armor](https://img.shields.io/badge/Cloud_Armor-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/armor/docs)
-[![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/vertex-ai/docs)
-
-**AI Coding Agents:**
-[![Kiro](https://img.shields.io/badge/Kiro.dev-FF9900?style=flat)](https://kiro.dev/)
-[![Cursor](https://img.shields.io/badge/Cursor_Rules-000000?style=flat)](https://docs.cursor.com/)
-[![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-8E75B2?style=flat&logo=google-gemini&logoColor=white)](https://github.com/google-gemini/gemini-cli)
-[![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat&logo=anthropic&logoColor=white)](https://docs.anthropic.com/en/docs/claude-code)
-
-**MLOps:**
-[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)](https://python.langchain.com/docs/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/)
-[![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat&logo=langchain&logoColor=white)](https://docs.smith.langchain.com/)
-[![LangFuse](https://img.shields.io/badge/LangFuse-000000?style=flat)](https://langfuse.com/docs)
-[![Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat&logo=apache-airflow&logoColor=white)](https://airflow.apache.org/docs/)
-[![Kubeflow](https://img.shields.io/badge/Kubeflow-326CE5?style=flat&logo=kubeflow&logoColor=white)](https://www.kubeflow.org/docs/)
-[![MLFlow](https://img.shields.io/badge/MLFlow-0194E2?style=flat&logo=mlflow&logoColor=white)](https://mlflow.org/docs/latest/)
-[![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)](https://docs.opencv.org/)
+- **Containerización:**
+  - [![OpenShift](https://img.shields.io/badge/Red_Hat_OpenShift-EE0000?style=flat&logo=red-hat-open-shift)](https://docs.openshift.com/) [![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=flat&logo=kubernetes&logoColor=white)](https://kubernetes.io/docs/) [![Minikube](https://img.shields.io/badge/Minikube-326CE5?style=flat&logo=kubernetes&logoColor=white)](https://minikube.sigs.k8s.io/docs/) [![Podman](https://img.shields.io/badge/Podman_Desktop-892CA0?style=flat&logo=podman&logoColor=white)](https://podman-desktop.io/docs/intro) [![GHCR](https://img.shields.io/badge/GitHub_Container_Registry-181717?style=flat&logo=github)](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
+- **Automatización:**
+  - [![Ansible](https://img.shields.io/badge/Ansible-EE0000?style=flat&logo=ansible)](https://docs.ansible.com/) [![AWX](https://img.shields.io/badge/AWX-EE0000?style=flat&logo=ansible)](https://ansible.readthedocs.io/projects/awx/en/latest/) [![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/manual/) [![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat&logo=powershell&logoColor=white)](https://learn.microsoft.com/en-us/powershell/) [![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)](https://docs.python.org/3/)
+- **Observabilidad:**
+  - [![Instana](https://img.shields.io/badge/IBM_Instana-000000?style=flat&logo=ibm)](https://www.ibm.com/docs/en/instana-observability) [![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat&logo=grafana&logoColor=white)](https://grafana.com/docs/) [![Datadog](https://img.shields.io/badge/Datadog-632CA6?style=flat&logo=datadog&logoColor=white)](https://docs.datadoghq.com/) [![Mezmo](https://img.shields.io/badge/Mezmo-4A154B?style=flat)](https://docs.mezmo.com/) [![CloudWatch](https://img.shields.io/badge/AWS_CloudWatch-FF4F8B?style=flat&logo=amazon-cloudwatch&logoColor=white)](https://docs.aws.amazon.com/cloudwatch/)
+- **GitOps & CI/CD:**
+  - [![ArgoCD](https://img.shields.io/badge/ArgoCD-EF7B4D?style=flat&logo=argo&logoColor=white)](https://argo-cd.readthedocs.io/) [![Helm](https://img.shields.io/badge/Helm-0F1689?style=flat&logo=helm&logoColor=white)](https://helm.sh/docs/) [![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white)](https://docs.github.com/en/actions) [![GitFlow](https://img.shields.io/badge/GitFlow-F05032?style=flat&logo=git&logoColor=white)](https://nvie.com/posts/a-successful-git-branching-model/)
+- **Infrastructure-as-Code:**
+  - [![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=flat&logo=terraform&logoColor=white)](https://developer.hashicorp.com/terraform/docs) [![OpenTofu](https://img.shields.io/badge/OpenTofu-FFDA18?style=flat&logo=opentofu&logoColor=black)](https://opentofu.org/docs/) [![CloudFormation](https://img.shields.io/badge/AWS_CloudFormation-FF4F8B?style=flat&logo=amazon-web-services&logoColor=white)](https://docs.aws.amazon.com/cloudformation/)
+- **AWS Cloud:**
+  - [![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazon-ec2&logoColor=white)](https://docs.aws.amazon.com/ec2/) [![IAM](https://img.shields.io/badge/IAM-DD344C?style=flat&logo=amazon-iam&logoColor=white)](https://docs.aws.amazon.com/iam/) [![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat&logo=aws-lambda&logoColor=white)](https://docs.aws.amazon.com/lambda/) [![SQS](https://img.shields.io/badge/SQS-FF4F8B?style=flat&logo=amazon-sqs&logoColor=white)](https://docs.aws.amazon.com/sqs/) [![SNS](https://img.shields.io/badge/SNS-FF4F8B?style=flat&logo=amazon-web-services&logoColor=white)](https://docs.aws.amazon.com/sns/) [![Route 53](https://img.shields.io/badge/Route_53-8C4FFF?style=flat&logo=amazon-route-53&logoColor=white)](https://docs.aws.amazon.com/route53/) [![IoT Core](https://img.shields.io/badge/IoT_Core-569A31?style=flat&logo=amazon-web-services&logoColor=white)](https://docs.aws.amazon.com/iot/) [![SageMaker](https://img.shields.io/badge/SageMaker-A100FF?style=flat&logo=amazon-web-services&logoColor=white)](https://docs.aws.amazon.com/sagemaker/)
+- **GCP Cloud:**
+  - [![Cloud SQL](https://img.shields.io/badge/Cloud_SQL-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/sql/docs) [![Compute Engine](https://img.shields.io/badge/Compute_Engine-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/compute/docs) [![Memorystore](https://img.shields.io/badge/Memorystore-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/memorystore/docs) [![Cloud Armor](https://img.shields.io/badge/Cloud_Armor-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/armor/docs) [![Vertex AI](https://img.shields.io/badge/Vertex_AI-4285F4?style=flat&logo=google-cloud&logoColor=white)](https://cloud.google.com/vertex-ai/docs)
+- **AI Coding Agents:**
+  - [![Kiro](https://img.shields.io/badge/Kiro.dev-FF9900?style=flat)](https://kiro.dev/) [![Cursor](https://img.shields.io/badge/Cursor_Rules-000000?style=flat)](https://docs.cursor.com/) [![Gemini CLI](https://img.shields.io/badge/Gemini_CLI-8E75B2?style=flat&logo=google-gemini&logoColor=white)](https://github.com/google-gemini/gemini-cli) [![Claude Code](https://img.shields.io/badge/Claude_Code-D97757?style=flat&logo=anthropic&logoColor=white)](https://docs.anthropic.com/en/docs/claude-code)
+- **MLOps:**
+  - [![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=flat&logo=langchain&logoColor=white)](https://python.langchain.com/docs/) [![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=flat&logo=langchain&logoColor=white)](https://langchain-ai.github.io/langgraph/) [![LangSmith](https://img.shields.io/badge/LangSmith-1C3C3C?style=flat&logo=langchain&logoColor=white)](https://docs.smith.langchain.com/) [![LangFuse](https://img.shields.io/badge/LangFuse-000000?style=flat)](https://langfuse.com/docs) [![Airflow](https://img.shields.io/badge/Apache_Airflow-017CEE?style=flat&logo=apache-airflow&logoColor=white)](https://airflow.apache.org/docs/) [![Kubeflow](https://img.shields.io/badge/Kubeflow-326CE5?style=flat&logo=kubeflow&logoColor=white)](https://www.kubeflow.org/docs/) [![MLFlow](https://img.shields.io/badge/MLFlow-0194E2?style=flat&logo=mlflow&logoColor=white)](https://mlflow.org/docs/latest/) [![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)](https://docs.opencv.org/)
 
 ### Administración de Sistemas
-
-**Patch Management:**
-[![ManageEngine](https://img.shields.io/badge/ManageEngine_Endpoint_Central-DC382D?style=flat)](https://www.manageengine.com/products/desktop-central/help.html)
-[![WSUS](https://img.shields.io/badge/WSUS-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
-[![Qualys](https://img.shields.io/badge/Qualys_VMDR-ED2024?style=flat)](https://www.qualys.com/documentation/)
-
-**LDAP & Identidad:**
-[![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat&logo=windows-server)](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/)
-[![AGPM](https://img.shields.io/badge/Group_Policy_(AGPM)-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/microsoft-desktop-optimization-pack/agpm/)
-[![Okta](https://img.shields.io/badge/Okta_SSO-007DC1?style=flat&logo=okta&logoColor=white)](https://developer.okta.com/docs/)
-[![Duo](https://img.shields.io/badge/Duo_Security-78C43D?style=flat&logo=duo&logoColor=white)](https://duo.com/docs)
-[![Entrust](https://img.shields.io/badge/Entrust-C8102E?style=flat)](https://www.entrust.com/documentation)
-
-**ITSM (ITIL v3):**
-[![ServiceNow](https://img.shields.io/badge/ServiceNow-0072F2?style=flat&logo=servicenow)](https://docs.servicenow.com/)
-[![Salesforce](https://img.shields.io/badge/Salesforce_Lightning-00A1E0?style=flat&logo=salesforce&logoColor=white)](https://developer.salesforce.com/docs)
-[![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white)](https://support.atlassian.com/jira-software-cloud/)
-[![PagerDuty](https://img.shields.io/badge/PagerDuty-06AC38?style=flat&logo=pagerduty&logoColor=white)](https://developer.pagerduty.com/docs/)
-
-**Windows Admin:**
-[![Tanium](https://img.shields.io/badge/Tanium-CB1F27?style=flat)](https://docs.tanium.com/)
-[![BigFix](https://img.shields.io/badge/IBM_BigFix-054ADA?style=flat&logo=ibm)](https://www.hcltechsw.com/bigfix/documentation)
-[![SCCM](https://img.shields.io/badge/MS_SCCM-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/mem/configmgr/)
-[![Regedit](https://img.shields.io/badge/Regedit-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/regedit)
-[![Event Viewer](https://img.shields.io/badge/Event_Viewer-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/shows/inside/event-viewer)
-[![MDT](https://img.shields.io/badge/MS_Deployment_Toolkit-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/mem/configmgr/mdt/)
-
-**macOS Admin:**
-[![Jamf Pro](https://img.shields.io/badge/Jamf_Pro-491F59?style=flat&logo=jamf)](https://learn.jamf.com/)
-[![Apple DEP](https://img.shields.io/badge/Apple_DEP-000000?style=flat&logo=apple&logoColor=white)](https://support.apple.com/guide/deployment/)
-
-**Virtualización & VPN:**
-[![VMware Horizon](https://img.shields.io/badge/VMware_Horizon_7-607078?style=flat&logo=vmware)](https://docs.vmware.com/en/VMware-Horizon/)
-[![Pulse Secure](https://img.shields.io/badge/Pulse_Secure-F47920?style=flat)](https://www.ivanti.com/support/pulse-secure)
-[![Cisco AnyConnect](https://img.shields.io/badge/Cisco_AnyConnect-1BA0D7?style=flat&logo=cisco)](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client/)
-
-**Monitoreo de Endpoints:**
-[![Nexthink](https://img.shields.io/badge/Nexthink-0078D4?style=flat)](https://docs.nexthink.com/)
-[![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white)](https://docs.splunk.com/)
-[![Dynatrace](https://img.shields.io/badge/Dynatrace-1496FF?style=flat&logo=dynatrace&logoColor=white)](https://docs.dynatrace.com/)
-
-**Infraestructura & OS:**
-[![RHEL](https://img.shields.io/badge/Red_Hat_Linux-EE0000?style=flat&logo=red-hat)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/)
-[![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?style=flat&logo=windows)](https://learn.microsoft.com/en-us/windows-server/)
-[![Exchange](https://img.shields.io/badge/Exchange_Server_2019-0078D4?style=flat&logo=microsoft-exchange&logoColor=white)](https://learn.microsoft.com/en-us/exchange/exchange-server)
-[![WSL2](https://img.shields.io/badge/WSL2-FCC624?style=flat&logo=linux&logoColor=black)](https://learn.microsoft.com/en-us/windows/wsl/)
-[![Outlook 365](https://img.shields.io/badge/Outlook_for_O365-0078D4?style=flat&logo=microsoft-outlook&logoColor=white)](https://support.microsoft.com/en-us/outlook)
+- **Patch Management:**
+  - [![ManageEngine](https://img.shields.io/badge/ManageEngine_Endpoint_Central-DC382D?style=flat)](https://www.manageengine.com/products/desktop-central/help.html) [![WSUS](https://img.shields.io/badge/WSUS-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) [![Qualys](https://img.shields.io/badge/Qualys_VMDR-ED2024?style=flat)](https://www.qualys.com/documentation/)
+- **LDAP & Identidad:**
+  - [![Active Directory](https://img.shields.io/badge/Active_Directory-0078D4?style=flat&logo=windows-server)](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/) [![AGPM](https://img.shields.io/badge/Group_Policy_(AGPM)-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/microsoft-desktop-optimization-pack/agpm/) [![Okta](https://img.shields.io/badge/Okta_SSO-007DC1?style=flat&logo=okta&logoColor=white)](https://developer.okta.com/docs/) [![Duo](https://img.shields.io/badge/Duo_Security-78C43D?style=flat&logo=duo&logoColor=white)](https://duo.com/docs) [![Entrust](https://img.shields.io/badge/Entrust-C8102E?style=flat)](https://www.entrust.com/documentation)
+- **ITSM (ITIL v3):**
+  - [![ServiceNow](https://img.shields.io/badge/ServiceNow-0072F2?style=flat&logo=servicenow)](https://docs.servicenow.com/) [![Salesforce](https://img.shields.io/badge/Salesforce_Lightning-00A1E0?style=flat&logo=salesforce&logoColor=white)](https://developer.salesforce.com/docs) [![Jira](https://img.shields.io/badge/Jira-0052CC?style=flat&logo=jira&logoColor=white)](https://support.atlassian.com/jira-software-cloud/) [![PagerDuty](https://img.shields.io/badge/PagerDuty-06AC38?style=flat&logo=pagerduty&logoColor=white)](https://developer.pagerduty.com/docs/)
+- **Windows Admin:**
+  - [![Tanium](https://img.shields.io/badge/Tanium-CB1F27?style=flat)](https://docs.tanium.com/) [![BigFix](https://img.shields.io/badge/IBM_BigFix-054ADA?style=flat&logo=ibm)](https://www.hcltechsw.com/bigfix/documentation) [![SCCM](https://img.shields.io/badge/MS_SCCM-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/mem/configmgr/) [![Regedit](https://img.shields.io/badge/Regedit-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/regedit) [![Event Viewer](https://img.shields.io/badge/Event_Viewer-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/shows/inside/event-viewer) [![MDT](https://img.shields.io/badge/MS_Deployment_Toolkit-0078D4?style=flat&logo=windows&logoColor=white)](https://learn.microsoft.com/en-us/mem/configmgr/mdt/)
+- **macOS Admin:**
+  - [![Jamf Pro](https://img.shields.io/badge/Jamf_Pro-491F59?style=flat&logo=jamf)](https://learn.jamf.com/) [![Apple DEP](https://img.shields.io/badge/Apple_DEP-000000?style=flat&logo=apple&logoColor=white)](https://support.apple.com/guide/deployment/)
+- **Virtualización & VPN:**
+  - [![VMware Horizon](https://img.shields.io/badge/VMware_Horizon_7-607078?style=flat&logo=vmware)](https://docs.vmware.com/en/VMware-Horizon/) [![Pulse Secure](https://img.shields.io/badge/Pulse_Secure-F47920?style=flat)](https://www.ivanti.com/support/pulse-secure) [![Cisco AnyConnect](https://img.shields.io/badge/Cisco_AnyConnect-1BA0D7?style=flat&logo=cisco)](https://www.cisco.com/c/en/us/support/security/anyconnect-secure-mobility-client/)
+- **Monitoreo de Endpoints:**
+  - [![Nexthink](https://img.shields.io/badge/Nexthink-0078D4?style=flat)](https://docs.nexthink.com/) [![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white)](https://docs.splunk.com/) [![Dynatrace](https://img.shields.io/badge/Dynatrace-1496FF?style=flat&logo=dynatrace&logoColor=white)](https://docs.dynatrace.com/)
+- **Infraestructura & OS:**
+  - [![RHEL](https://img.shields.io/badge/Red_Hat_Linux-EE0000?style=flat&logo=red-hat)](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/) [![Windows Server](https://img.shields.io/badge/Windows_Server-0078D4?style=flat&logo=windows)](https://learn.microsoft.com/en-us/windows-server/) [![Exchange](https://img.shields.io/badge/Exchange_Server_2019-0078D4?style=flat&logo=microsoft-exchange&logoColor=white)](https://learn.microsoft.com/en-us/exchange/exchange-server) [![WSL2](https://img.shields.io/badge/WSL2-FCC624?style=flat&logo=linux&logoColor=black)](https://learn.microsoft.com/en-us/windows/wsl/) [![Outlook 365](https://img.shields.io/badge/Outlook_for_O365-0078D4?style=flat&logo=microsoft-outlook&logoColor=white)](https://support.microsoft.com/en-us/outlook)
 
 ### Gestión de Proyectos
-
-**Herramientas Ágiles:**
-[![ClickUp](https://img.shields.io/badge/ClickUp-7B68EE?style=flat&logo=clickup&logoColor=white)](https://docs.clickup.com/)
-[![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white)](https://developers.notion.com/)
-[![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=flat&logo=confluence&logoColor=white)](https://support.atlassian.com/confluence-cloud/)
-[![Scrum](https://img.shields.io/badge/Scrum-6DB33F?style=flat)](https://www.scrum.org/resources/what-scrum-module)
-[![Management 3.0](https://img.shields.io/badge/Management_3.0-FF6600?style=flat)](https://management30.com/)
+- **Herramientas Ágiles:**
+  - [![ClickUp](https://img.shields.io/badge/ClickUp-7B68EE?style=flat&logo=clickup&logoColor=white)](https://docs.clickup.com/) [![Notion](https://img.shields.io/badge/Notion-000000?style=flat&logo=notion&logoColor=white)](https://developers.notion.com/) [![Confluence](https://img.shields.io/badge/Confluence-172B4D?style=flat&logo=confluence&logoColor=white)](https://support.atlassian.com/confluence-cloud/) [![Scrum](https://img.shields.io/badge/Scrum-6DB33F?style=flat)](https://www.scrum.org/resources/what-scrum-module) [![Management 3.0](https://img.shields.io/badge/Management_3.0-FF6600?style=flat)](https://management30.com/)
 
 ### UX/UI & Desarrollo
-
-**Mobile & Frontend:**
-[![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)](https://docs.flutter.dev/)
-[![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://dart.dev/guides)
-[![Riverpod](https://img.shields.io/badge/Riverpod-00B0FF?style=flat)](https://riverpod.dev/docs/introduction/getting_started)
-[![Rive](https://img.shields.io/badge/Rive-1D1D1D?style=flat)](https://rive.app/docs)
-[![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev/)
-
-**Diseño & Low-Code:**
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)](https://help.figma.com/)
-[![Zeplin](https://img.shields.io/badge/Zeplin-FDBD39?style=flat&logo=zeplin&logoColor=black)](https://docs.zeplin.dev/)
-[![Lovable](https://img.shields.io/badge/Lovable-FF6B6B?style=flat)](https://docs.lovable.dev/)
-[![Bolt](https://img.shields.io/badge/Bolt.new-000000?style=flat)](https://docs.bolt.new/)
-[![Webflow](https://img.shields.io/badge/Webflow-4353FF?style=flat&logo=webflow&logoColor=white)](https://university.webflow.com/)
-[![Elementor](https://img.shields.io/badge/Elementor-92003B?style=flat&logo=elementor&logoColor=white)](https://elementor.com/help/)
-
-**Backend & Plataformas:**
-[![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.com/docs)
-[![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat&logo=graphql&logoColor=white)](https://graphql.org/learn/)
-[![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=flat)](https://grpc.io/docs/)
-[![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)](https://redis.io/docs/)
-[![Moodle](https://img.shields.io/badge/Moodle-F98012?style=flat&logo=moodle&logoColor=white)](https://docs.moodle.org/)
-[![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/docs.php)
-[![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)](https://developers.cloudflare.com/)
-[![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)](https://docs.n8n.io/)
-[![Starknet](https://img.shields.io/badge/Starknet/Cairo-FF4500?style=flat)](https://docs.starknet.io/)
+- **Mobile & Frontend:**
+  - [![Flutter](https://img.shields.io/badge/Flutter-02569B?style=flat&logo=flutter&logoColor=white)](https://docs.flutter.dev/) [![Dart](https://img.shields.io/badge/Dart-0175C2?style=flat&logo=dart&logoColor=white)](https://dart.dev/guides) [![Riverpod](https://img.shields.io/badge/Riverpod-00B0FF?style=flat)](https://riverpod.dev/docs/introduction/getting_started) [![Rive](https://img.shields.io/badge/Rive-1D1D1D?style=flat)](https://rive.app/docs) [![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)](https://react.dev/)
+- **Diseño & Low-Code:**
+  - [![Figma](https://img.shields.io/badge/Figma-F24E1E?style=flat&logo=figma&logoColor=white)](https://help.figma.com/) [![Zeplin](https://img.shields.io/badge/Zeplin-FDBD39?style=flat&logo=zeplin&logoColor=black)](https://docs.zeplin.dev/) [![Lovable](https://img.shields.io/badge/Lovable-FF6B6B?style=flat)](https://docs.lovable.dev/) [![Bolt](https://img.shields.io/badge/Bolt.new-000000?style=flat)](https://docs.bolt.new/) [![Webflow](https://img.shields.io/badge/Webflow-4353FF?style=flat&logo=webflow&logoColor=white)](https://university.webflow.com/) [![Elementor](https://img.shields.io/badge/Elementor-92003B?style=flat&logo=elementor&logoColor=white)](https://elementor.com/help/)
+- **Backend & Plataformas:**
+  - [![Supabase](https://img.shields.io/badge/Supabase-3FCF8E?style=flat&logo=supabase&logoColor=white)](https://supabase.com/docs) [![GraphQL](https://img.shields.io/badge/GraphQL-E10098?style=flat&logo=graphql&logoColor=white)](https://graphql.org/learn/) [![gRPC](https://img.shields.io/badge/gRPC-244C5A?style=flat)](https://grpc.io/docs/) [![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)](https://redis.io/docs/) [![Moodle](https://img.shields.io/badge/Moodle-F98012?style=flat&logo=moodle&logoColor=white)](https://docs.moodle.org/) [![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat&logo=php&logoColor=white)](https://www.php.net/docs.php) [![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=cloudflare&logoColor=white)](https://developers.cloudflare.com/) [![n8n](https://img.shields.io/badge/n8n-EA4B71?style=flat&logo=n8n&logoColor=white)](https://docs.n8n.io/) [![Starknet](https://img.shields.io/badge/Starknet/Cairo-FF4500?style=flat)](https://docs.starknet.io/)
 
 ### Data & Analytics
-
-**Visualización:**
-[![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)](https://help.tableau.com/)
-[![Looker Studio](https://img.shields.io/badge/Looker_Studio-4285F4?style=flat&logo=looker&logoColor=white)](https://support.google.com/looker-studio/)
-[![Power BI](https://img.shields.io/badge/Power_BI_(DAX)-F2C811?style=flat&logo=power-bi&logoColor=black)](https://learn.microsoft.com/en-us/power-bi/)
-[![Excel](https://img.shields.io/badge/Excel_PivotTables-217346?style=flat&logo=microsoft-excel&logoColor=white)](https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data)
-[![Google Sheets](https://img.shields.io/badge/Google_Sheets-34A853?style=flat&logo=google-sheets&logoColor=white)](https://support.google.com/docs/topic/9054603)
-
-**Bases de Datos:**
-[![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoft-sql-server)](https://learn.microsoft.com/en-us/sql/)
-[![IBM DB2](https://img.shields.io/badge/IBM_DB2-054ADA?style=flat&logo=ibm)](https://www.ibm.com/docs/en/db2)
-[![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white)](https://docs.oracle.com/en/database/)
-[![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/docs/)
-
-**Data Science:**
-[![KNIME](https://img.shields.io/badge/KNIME_Analytics-FDD800?style=flat&logo=knime&logoColor=black)](https://docs.knime.com/)
-[![Alteryx](https://img.shields.io/badge/Alteryx-0078C0?style=flat)](https://help.alteryx.com/)
+- **Visualización:**
+  - [![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat&logo=tableau&logoColor=white)](https://help.tableau.com/) [![Looker Studio](https://img.shields.io/badge/Looker_Studio-4285F4?style=flat&logo=looker&logoColor=white)](https://support.google.com/looker-studio/) [![Power BI](https://img.shields.io/badge/Power_BI_(DAX)-F2C811?style=flat&logo=power-bi&logoColor=black)](https://learn.microsoft.com/en-us/power-bi/) [![Excel](https://img.shields.io/badge/Excel_PivotTables-217346?style=flat&logo=microsoft-excel&logoColor=white)](https://support.microsoft.com/en-us/office/create-a-pivottable-to-analyze-worksheet-data) [![Google Sheets](https://img.shields.io/badge/Google_Sheets-34A853?style=flat&logo=google-sheets&logoColor=white)](https://support.google.com/docs/topic/9054603)
+- **Bases de Datos:**
+  - [![SQL](https://img.shields.io/badge/SQL-CC2927?style=flat&logo=microsoft-sql-server)](https://learn.microsoft.com/en-us/sql/) [![IBM DB2](https://img.shields.io/badge/IBM_DB2-054ADA?style=flat&logo=ibm)](https://www.ibm.com/docs/en/db2) [![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white)](https://docs.oracle.com/en/database/) [![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/docs/)
+- **Data Science:**
+  - [![KNIME](https://img.shields.io/badge/KNIME_Analytics-FDD800?style=flat&logo=knime&logoColor=black)](https://docs.knime.com/) [![Alteryx](https://img.shields.io/badge/Alteryx-0078C0?style=flat)](https://help.alteryx.com/)
 
 ---
 
