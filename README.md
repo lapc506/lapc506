@@ -73,59 +73,59 @@ Mis áreas de expertise incluyen **Site Reliability Engineering** (gestión de C
 *Mar. 2026 – Actualidad*
 
 **Dojo OS — Plataforma EdTech SaaS (Supabase + React + Edge Functions)**
-- Implementación de security hardening integral: rate limiting en Edge Functions críticas, corrección de políticas RLS excesivamente permisivas, field allowlists contra mass-assignment, y pre-commit SQL linter para prevenir funciones SECURITY DEFINER inseguras
-- Integración de Cloudflare Turnstile CAPTCHA en formularios de signup y password reset
-- Creación de tabla `security_audit_log` e instrumentación de Edge Functions para trazabilidad
-- Escritura de tests de integración pgTAP para validar políticas RLS en tablas críticas
-- Habilitación del chat con AI agent en producción, incluyendo invalidación de queries post-streaming y paso de contexto de cursos (Pathways) al agente
-- Migración de endpoints `/api/chat` → `/api/web-chat` a través de frontend y Edge Functions
-- Centralización de `getSiteUrl()` y `getAppEnv()` para corregir links de email en staging y selección de API keys de Stripe y Sentry
-- Migración de CI/CD workflows a self-hosted runner en Google Compute Engine con ajustes de timeouts
-- Creación de tabla y API client para `review_results`
-- Documentación de hackathon lead magnet playbook y pitch deck templates con Marp
-- Pill de AI disclosure en el chat widget para transparencia de uso de IA
+- Implementación de security hardening integral: rate limiting en funciones serverless críticas, corrección de políticas de acceso a nivel de fila excesivamente permisivas, listas de campos permitidos contra mass-assignment, y linter pre-commit para prevenir escalaciones de privilegios en SQL
+- Integración de CAPTCHA anti-bot en formularios de registro y recuperación de contraseña
+- Creación de una tabla de auditoría de seguridad e instrumentación de funciones serverless para trazabilidad completa
+- Escritura de tests de integración para validar políticas de acceso a datos en tablas críticas
+- Habilitación del chat con agente de IA en producción, incluyendo sincronización de estado post-streaming y enriquecimiento contextual del agente con datos de cursos
+- Refactorización y renombramiento de endpoints de la API de chat a través de frontend y backend
+- Centralización de helpers de configuración de entorno para resolver inconsistencias entre ambientes (staging vs producción) en emails transaccionales, pasarela de pagos y monitoreo de errores
+- Migración de pipelines de CI/CD a runners auto-hospedados en Google Compute Engine
+- Modelado de nuevas entidades de dominio con tablas y clientes API dedicados
+- Documentación de playbooks de captación de leads para hackathons y templates de pitch decks
+- Indicador visual de transparencia de IA en la interfaz de chat
 
-**Dojo Agent — Claude Code Plugin para Gestión Autónoma de Proyectos**
-- Desarrollo de herramientas de integración con Linear: `dojo_linear_create`, `dojo_linear_update`, `dojo_linear_comment`, `dojo_linear_projects`, `dojo_linear_cycles` con parámetros de estado
-- Herramienta `dojo_github_pr_list` + cron endpoint, y `dojo_github_skill_write` para auto-persistencia de skills del agente
-- Endpoint de webhook GitHub para auto-review de PRs
-- Herramienta `dojo_slack_search` para búsqueda de keywords en historial de canales
-- Herramienta `dojo_sql_query` con funciones RPC y descripciones schema-aware para consultas SQL seguras
-- Endpoint `/api/ingest/sync` para re-ingestión atómica de cursos y `/api/ingest/webhook` con GitHub Action template
-- Migración de embeddings de `text-embedding-004` a `gemini-embedding-001` (v1beta → v1), con columnas de source/title
-- Sistema de memoria persistente con normalización de importancia (0.0–1.0) y categorías
-- Sanitización de contenido de mensajes de usuario y descripciones de Linear issues
-- Defensa contra despacho duplicado con dedup persistente cross-replica para Slack
-- Anclaje de datos para prevenir alucinaciones SQL + logging de output en auditoría
-- Implementación de `dojo_startup_incubation_brainstormer` — herramienta de 21 fases para Business Model Canvas
-- Cron endpoint de reporte de issues activos en Linear
-- Suite de 31 tests E2E para graph search y self-healing, más escenarios de hackathon e incubación
-- Estimación de uso de tokens cuando el proveedor no lo reporta
-- Inyección de URLs de infraestructura en contexto del agente para canales internos
-- Disclaimer de recomendación AI en output de developer-match
+**Dojo Agent — Plugin de Claude Code para Gestión Autónoma de Proyectos**
+- Desarrollo de un conjunto de herramientas para integración bidireccional con el gestor de proyectos: creación, actualización, comentarios, consulta de proyectos y ciclos de sprint
+- Herramientas de integración con el repositorio de código: listado de PRs con cron programado, y auto-persistencia de conocimiento del agente vía commits
+- Endpoint de webhook para revisión automática de pull requests
+- Herramienta de búsqueda semántica en historial de canales de mensajería del equipo
+- Herramienta de consulta SQL segura con descripciones de esquema auto-generadas y funciones de acceso controlado
+- Endpoints de ingestión para sincronización atómica de contenido educativo y webhooks con plantillas de automatización
+- Migración del modelo de embeddings a una generación más reciente, con metadatos enriquecidos de origen y título
+- Sistema de memoria persistente del agente con ponderación de relevancia y categorización
+- Sanitización de entradas de usuario y contenido externo antes de persistencia
+- Defensa contra mensajes duplicados con deduplicación persistente entre réplicas para integraciones de mensajería
+- Anclaje de datos para prevenir respuestas fabricadas en consultas a base de datos, con logging de auditoría
+- Herramienta de brainstorming estructurado en 21 fases para generación de Business Model Canvas
+- Reportes periódicos automatizados del estado de issues del proyecto
+- Suite de 31+ tests E2E para búsqueda en grafo y capacidad de auto-reparación, con escenarios de hackathon e incubación
+- Estimación de consumo de tokens cuando el proveedor del modelo no lo reporta
+- Enriquecimiento contextual del agente con URLs de infraestructura para canales internos del equipo
+- Disclaimers de transparencia en recomendaciones generadas por IA
 
-**Freedom Academy — Infraestructura GCP para Moodle LMS (OpenTofu + Bash)**
-- Diseño e implementación de módulos de infraestructura con OpenTofu: Cloud SQL (MySQL), Memorystore (Redis), y Compute Engine con startup scripts
-- Configuración de elasticidad con Managed Instance Groups, Load Balancer y autoscaler
-- Implementación de Cloud Armor WAF, alertas de monitoreo y estrategia de backups automatizados
-- Migración de PHP 8.1 → 8.2 con verificación SHA256 de tarballs de Moodle
-- Centralización de branding (tokens, colores, emails) y logos i18n EN/ES con tema Moove
-- Configuración de SSL/TLS y migración de dominio `demolabcr.org` → `freedomacademies.org`
-- Scripts de activación SMTP (Resend), reCAPTCHA v2, y verificación de restauración de backups
-- Configuración de `mod_scorm` para paquetes Articulate Rise
-- Exportación de datos de estudiantes con DDL schema y scripts GDPR
-- Documentación completa: credential handover, incident response playbook, deployment runbook, y matriz de roles IAM
-- Entorno local de desarrollo Moodle para testing de migraciones
+**Freedom Academy — Infraestructura GCP para LMS Educativo (OpenTofu + Bash)**
+- Diseño e implementación de módulos de infraestructura como código: base de datos relacional gestionada, caché en memoria, y cómputo con scripts de aprovisionamiento automático
+- Configuración de elasticidad con grupos de instancias gestionadas, balanceador de carga y autoescalado
+- Implementación de firewall de aplicaciones web (WAF), alertas de monitoreo y estrategia de backups automatizados
+- Migración del runtime del servidor a una versión más reciente con verificación de integridad de artefactos
+- Centralización de identidad visual (tokens de marca, paleta de colores, plantillas de email) con soporte multilingüe EN/ES
+- Configuración de certificados SSL/TLS y migración completa de dominio a producción
+- Scripts de configuración de email transaccional, protección anti-bot, y verificación de restauración de respaldos
+- Habilitación de compatibilidad con paquetes de e-learning interactivo de terceros
+- Pipeline de exportación de datos de estudiantes con esquema relacional y cumplimiento de normativas de privacidad (GDPR)
+- Documentación completa: traspaso de credenciales, playbook de respuesta a incidentes, runbook de despliegue, y matriz de roles y permisos cloud
+- Entorno local de desarrollo para testing de migraciones previo a producción
 
-**Freedom Academy — Suite de Plugins Custom para Moodle 4.5 (PHP)**
-- **Partner Enrol:** Plugin de enrollment con gestión individual de estudiantes (add/remove/view), estadísticas agregadas, tablero kanban de student journey, y exportación CSV con scoping por partner
-- **UTM Tracker:** Rastreo de campañas de marketing con integración a GA4 y Meta Conversions API (CAPI), incluyendo reporte de funnel de rendimiento de campañas y tests HTTP mockeados
-- **Student Journey:** Motor de automatización de journeys con triggers de quiz y grading, emisión de certificados, editor visual de reglas para administradores no técnicos, dashboard de estadísticas y vista de detalle de ejecución, con notificaciones push
-- **Freedom Dashboard:** Dashboard nativo de Moodle con controles de acceso basados en roles (admin/partner/staff), agregadores de datos, vistas personalizadas, y exportación CSV por partner
-- **AI Feedback Engine:** Plugin de retroalimentación impulsada por IA con spike de investigación documentado sobre LLM engines
-- ADR-001 para arquitectura de dashboard: enfoque híbrido plugin nativo + Grafana
-- Corrección de 3 bugs de compatibilidad con Moodle 4.5
-- Hardening de seguridad contra SSRF y hallazgos lógicos de Greptile
+**Freedom Academy — Suite de Plugins Custom para LMS Educativo (PHP)**
+- **Enrollment por Partners:** Plugin de matriculación con gestión individual de estudiantes, estadísticas agregadas, tablero kanban del journey del estudiante, y exportación de reportes delimitada por organización
+- **Rastreo de Campañas:** Seguimiento de campañas de marketing con integración a plataformas de analytics y conversiones, incluyendo reporte de funnel de rendimiento y tests automatizados con mocks HTTP
+- **Automatización de Journeys:** Motor de automatización del recorrido del estudiante con disparadores basados en evaluaciones y calificaciones, emisión de certificados, editor visual de reglas para administradores no técnicos, dashboard de métricas y vista de detalle de ejecución, con notificaciones push
+- **Dashboard Centralizado:** Panel de control nativo con controles de acceso basados en roles (administrador/partner/staff), agregadores de datos, vistas personalizadas, y exportación de reportes por organización
+- **Retroalimentación con IA:** Plugin de feedback impulsado por inteligencia artificial con documentación de investigación sobre motores de lenguaje natural
+- Documentación de decisiones arquitectónicas para el enfoque híbrido del dashboard
+- Corrección de bugs de compatibilidad con la versión más reciente del LMS
+- Hardening de seguridad contra vulnerabilidades de falsificación de solicitudes del lado del servidor y hallazgos de análisis estático
 
 ### IBM – Site Reliability Engineer
 *Maximo Application Suite and Maximo Manage*
