@@ -1,0 +1,40 @@
+---
+import { getResume, type Locale } from "../lib/resume";
+import Hero from "./Hero.astro";
+import About from "./About.astro";
+import Experience from "./Experience.astro";
+import Ventures from "./Ventures.astro";
+import Values from "./Values.astro";
+import Skills from "./Skills.astro";
+import Services from "./Services.astro";
+import Education from "./Education.astro";
+import Certifications from "./Certifications.astro";
+import Civic from "./Civic.astro";
+import Communities from "./Communities.astro";
+import Languages from "./Languages.astro";
+import Ideas from "./Ideas.astro";
+import Interests from "./Interests.astro";
+import Contact from "./Contact.astro";
+
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const data = getResume(locale);
+---
+
+<Hero data={data} />
+<About data={data} />
+<Experience data={data} />
+<Ventures data={data} />
+<Values data={data} />
+<Skills data={data} />
+<Services data={data} />
+<Education data={data} />
+<Certifications data={data} />
+<Civic data={data} />
+<Communities data={data} />
+<Languages data={data} />
+<Ideas data={data} />
+<Interests data={data} />
+<Contact data={data} />

@@ -1,0 +1,47 @@
+---
+import type { Locale } from "../lib/resume";
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const opts: { code: Locale; href: string; label: string }[] = [
+  { code: "en", href: "/", label: "EN" },
+  { code: "es", href: "/es/", label: "ES" },
+];
+---
+
+<div class="inline-flex items-center rounded-md border border-border text-xs">
+  {
+    opts.map((o, i) => (
+      <a
+        href={o.href}
+        data-lang-link
+        hreflang={o.code}
+        aria-current={o.code === locale ? "true" : undefined}
+        class:list={[
+          "px-2.5 py-1.5 font-medium transition",
+          i === 0 && "rounded-l-md",
+          i === opts.length - 1 && "rounded-r-md",
+          o.code === locale
+            ? "bg-primary text-primary-foreground"
+            : "text-muted-foreground hover:text-foreground",
+        ]}
+      >
+        {o.label}
+      </a>
+    ))
+  }
+</div>
+
+<script>
+  // Preserve the current section hash when switching language.
+  document.querySelectorAll("[data-lang-link]").forEach((el) => {
+    el.addEventListener("click", (e) => {
+      const hash = window.location.hash;
+      if (hash) {
+        e.preventDefault();
+        window.location.href = (el as HTMLAnchorElement).pathname + hash;
+      }
+    });
+  });
+</script>

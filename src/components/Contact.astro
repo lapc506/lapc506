@@ -1,0 +1,76 @@
+---
+import { Icon } from "astro-icon/components";
+import type { ResumeData, SocialLink } from "../lib/resume";
+import Section from "./Section.astro";
+import IconLink from "./IconLink.astro";
+
+interface Props {
+  data: ResumeData;
+}
+const { data } = Astro.props;
+const { ui, basics, portfolio } = data;
+const section = ui.sections.contact;
+const es = data.locale === "es";
+
+const primary = [
+  { icon: "lucide:mail", label: basics.email, href: `mailto:${basics.email}` },
+  { icon: "lucide:phone", label: basics.phone, href: `tel:${basics.phone.replace(/[^+\d]/g, "")}` },
+  { icon: "lucide:map-pin", label: basics.location, href: null },
+];
+
+const categories: { key: SocialLink["category"]; label: string }[] = [
+  { key: "professional", label: es ? "Profesional" : "Professional" },
+  { key: "social", label: "Social" },
+  { key: "music", label: es ? "Música" : "Music" },
+  { key: "contact", label: es ? "Contacto" : "Contact" },
+];
+const groups = categories
+  .map((c) => ({ ...c, links: portfolio.socialLinks.filter((l) => l.category === c.key) }))
+  .filter((g) => g.links.length > 0);
+---
+
+<Section id="contact" title={section.title} subtitle={section.subtitle} muted>
+  <!-- primary contact -->
+  <div class="grid gap-4 sm:grid-cols-3">
+    {
+      primary.map((p) => {
+        const inner = (
+          <>
+            <Icon name={p.icon} class="h-5 w-5 shrink-0 text-primary" />
+            <span class="break-words text-sm font-medium text-foreground">{p.label}</span>
+          </>
+        );
+        return p.href ? (
+          <a
+            href={p.href}
+            class="reveal flex items-center gap-3 rounded-lg border border-border bg-card/50 p-4 transition hover:border-primary/50"
+          >
+            {inner}
+          </a>
+        ) : (
+          <div class="reveal flex items-center gap-3 rounded-lg border border-border bg-card/50 p-4">
+            {inner}
+          </div>
+        );
+      })
+    }
+  </div>
+
+  <!-- link hub -->
+  <div class="mt-10 space-y-6">
+    {
+      groups.map((g) => (
+        <div class="reveal">
+          <h3 class="mb-3 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+            {g.label}
+          </h3>
+          <div class="flex flex-wrap gap-2.5">
+            {g.links.map((link) => (
+              <IconLink link={link} variant="chip" />
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</Section>

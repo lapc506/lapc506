@@ -1,0 +1,144 @@
+---
+import type { ResumeData } from "../lib/resume";
+import Section from "./Section.astro";
+import badgeMap from "../data/skill-badges.json";
+interface Props {
+  data: ResumeData;
+}
+const { data } = Astro.props;
+const { ui, experience } = data;
+const section = ui.sections.experience;
+const badges = badgeMap as Record<string, string>;
+const fallbackLabel =
+  data.locale === "es" ? "Responsabilidades y logros" : "Responsibilities & achievements";
+
+const proseClass =
+  "space-y-2 text-sm text-muted-foreground [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_li]:marker:text-primary [&_p]:mt-2 [&_em]:text-foreground/90 [&_strong]:text-foreground";
+
+// Split a leading "<p><em>context subtitle</em></p>" off the description body.
+function splitDescription(html: string) {
+  const m = html.match(/^\s*<p><em>([\s\S]*?)<\/em><\/p>\s*/);
+  if (m) return { subtitle: m[1], body: html.slice(m[0].length) };
+  return { subtitle: null as string | null, body: html };
+}
+
+// Each top-level entry exposes one or more collapsible groups (chevron on the
+// context subtitle / sub-role title — never on the job header itself).
+const entries = experience.map((item) => {
+  if (item.roles.length > 0) {
+    return {
+      item,
+      groups: item.roles.map((r) => ({
+        title: r.position,
+        period: r.period as string | null,
+        body: r.description,
+      })),
+    };
+  }
+  const { subtitle, body } = splitDescription(item.description || "");
+  return {
+    item,
+    groups: body
+      ? [{ title: subtitle || fallbackLabel, period: null as string | null, body }]
+      : [],
+  };
+});
+---
+
+<Section id="experience" title={section.title} subtitle={section.subtitle}>
+  <ol class="relative ml-3 space-y-6 border-l border-border pl-8 sm:ml-4 sm:pl-10">
+    {
+      entries.map(({ item, groups }) => (
+        <li class="reveal relative">
+          <span
+            aria-hidden="true"
+            class="absolute -left-[2.55rem] top-5 h-3.5 w-3.5 rounded-full bg-brand-gradient ring-4 ring-background sm:-left-[3.05rem]"
+          />
+
+          <article class="rounded-lg border border-border bg-card/50 p-5 transition hover:border-primary/50">
+            {/* static job header */}
+            <div class="flex flex-col gap-1.5 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
+              <div>
+                <h3 class="font-heading text-lg font-semibold leading-snug text-foreground">
+                  {item.position}
+                </h3>
+                <p class="mt-0.5 text-sm font-medium text-primary">
+                  {item.website?.url ? (
+                    <a
+                      href={item.website.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="transition hover:underline"
+                    >
+                      {item.company}
+                    </a>
+                  ) : (
+                    item.company
+                  )}
+                </p>
+              </div>
+              <div class="shrink-0 text-sm text-muted-foreground sm:text-right">
+                <p class="font-mono text-xs">{item.period}</p>
+                <p class="mt-0.5 text-xs">📍 {item.location}</p>
+              </div>
+            </div>
+
+            {/* skills used in this role */}
+            {item.skills && item.skills.length > 0 && (
+              <ul class="mt-3 flex flex-wrap items-center gap-1.5">
+                {item.skills.map((k) =>
+                  badges[k] ? (
+                    <li>
+                      <img
+                        src={badges[k]}
+                        alt={k}
+                        height="20"
+                        loading="lazy"
+                        decoding="async"
+                        class="h-5 rounded-[3px]"
+                      />
+                    </li>
+                  ) : (
+                    <li class="pill">{k}</li>
+                  ),
+                )}
+              </ul>
+            )}
+
+            {/* collapsible context group(s) — chevron lives here */}
+            {groups.length > 0 && (
+              <div class="mt-4 space-y-2.5">
+                {groups.map((g) => (
+                  <details class="group/role rounded-lg border border-border bg-background/40 transition hover:border-primary/50">
+                    <summary class="flex cursor-pointer list-none items-start gap-2 px-4 py-3 text-sm font-medium text-foreground">
+                      <span
+                        aria-hidden="true"
+                        class="mt-0.5 text-primary transition-transform group-open/role:rotate-90"
+                      >
+                        ▸
+                      </span>
+                      <span>
+                        {g.title}
+                        {g.period && (
+                          <span class="mt-0.5 block font-mono text-xs font-normal text-muted-foreground">
+                            {g.period}
+                          </span>
+                        )}
+                      </span>
+                    </summary>
+                    {g.body && (
+                      <div
+                        set:html={g.body}
+                        class={`border-t border-border px-4 py-3 ${proseClass}`}
+                      />
+                    )}
+                  </details>
+                ))}
+              </div>
+            )}
+          </article>
+        </li>
+      ))
+    }
+  </ol>
+</Section>

@@ -1,0 +1,54 @@
+---
+import type { ResumeData } from "../lib/resume";
+import Section from "./Section.astro";
+import badgeMap from "../data/skill-badges.json";
+interface Props {
+  data: ResumeData;
+}
+const { data } = Astro.props;
+const { ui, skills } = data;
+const section = ui.sections.skills;
+const badges = badgeMap as Record<string, string>;
+---
+
+<Section id="skills" title={section.title} subtitle={section.subtitle} muted>
+  <div class="grid gap-4 sm:grid-cols-2">
+    {
+      skills.map((s) => (
+        <article class="reveal rounded-lg border border-border bg-card/50 p-5 transition hover:border-primary/50">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <h3 class="font-heading font-semibold">{s.name}</h3>
+            <div class="flex shrink-0 gap-1" aria-label={`${s.proficiency} (${s.level}/5)`}>
+              {Array.from({ length: 5 }).map((_, i) => (
+                <span
+                  class:list={[
+                    "h-1.5 w-4 rounded-full",
+                    i < s.level ? "bg-brand-gradient" : "bg-border",
+                  ]}
+                />
+              ))}
+            </div>
+          </div>
+          <ul class="flex flex-wrap items-center gap-1.5">
+            {s.keywords.map((k) =>
+              badges[k] ? (
+                <li>
+                  <img
+                    src={badges[k]}
+                    alt={k}
+                    height="20"
+                    loading="lazy"
+                    decoding="async"
+                    class="h-5 rounded-[3px]"
+                  />
+                </li>
+              ) : (
+                <li class="pill">{k}</li>
+              ),
+            )}
+          </ul>
+        </article>
+      ))
+    }
+  </div>
+</Section>

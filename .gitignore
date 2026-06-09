@@ -1,0 +1,29 @@
+# dependencies & build output
+node_modules/
+dist/
+.astro/
+
+# logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# env & secrets
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+Thumbs.db
+
+# editor
+.vscode/
+.idea/
+
+# scratch screenshots from this session (root-level only; public/ assets are kept)
+/.playwright-mcp/
+/*.png
+/*.jpeg

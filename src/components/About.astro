@@ -1,0 +1,29 @@
+---
+import type { ResumeData } from "../lib/resume";
+import Section from "./Section.astro";
+interface Props {
+  data: ResumeData;
+}
+const { data } = Astro.props;
+const { ui, summary } = data;
+const section = ui.sections.about;
+
+// Identical in both locales — kept in English intentionally.
+const motto =
+  "Leaving a Lasting Legacy is my Driver. Helping others access the opportunities I had is my purpose.";
+---
+
+<Section id="about" title={section.title} subtitle={section.subtitle}>
+  <blockquote
+    class="reveal mb-8 rounded-lg border-l-4 border-primary bg-card/50 py-4 pr-5 pl-6 transition hover:border-primary/80"
+  >
+    <p class="font-heading text-lg font-semibold leading-snug sm:text-xl">
+      <span class="text-gradient">{motto}</span>
+    </p>
+  </blockquote>
+
+  <div
+    set:html={summary.content}
+    class="reveal space-y-2 text-sm text-muted-foreground [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_li]:marker:text-primary [&_p]:mt-2 [&_em]:text-foreground/90 [&_strong]:text-foreground"
+  />
+</Section>
