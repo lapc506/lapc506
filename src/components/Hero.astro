@@ -7,14 +7,20 @@ interface Props {
 const { data } = Astro.props;
 const { ui, basics, portfolio, summary } = data;
 
-const roles = basics.headline.split("|").map((r) => r.trim());
-const motto =
-  "Leaving a Lasting Legacy is my Driver. Helping others access the opportunities I had is my purpose.";
+// Drop the "10+ Years in Tech" segment — it now lives in the KPI buttons.
+const roles = basics.headline
+  .split("|")
+  .map((r) => r.trim())
+  .filter((r) => !/\d+\s*\+?\s*(years?|a[nñ]os)/i.test(r));
+const mottoLines = [
+  "Leaving a Lasting Legacy is my Driver.",
+  "Helping others access the opportunities I had is my purpose.",
+];
 
 const stats = [
-  { value: "10+", label: ui.hero.stats.years },
-  { value: "5", label: ui.hero.stats.companies },
-  { value: "5", label: ui.hero.stats.ventures },
+  { value: "10+", label: ui.hero.stats.years, href: "#experience" },
+  { value: "5", label: ui.hero.stats.companies, href: "#experience" },
+  { value: "5", label: ui.hero.stats.ventures, href: "#ventures" },
 ];
 ---
 
@@ -65,7 +71,7 @@ const stats = [
       <!-- motto (from About) -->
       <blockquote class="mt-6 border-l-2 border-primary/70 pl-4">
         <p class="text-base font-semibold leading-snug sm:text-lg">
-          <span class="text-gradient">{motto}</span>
+          {mottoLines.map((line) => <span class="block text-gradient">{line}</span>)}
         </p>
       </blockquote>
 
@@ -75,28 +81,9 @@ const stats = [
         class="mt-5 space-y-3 text-sm leading-relaxed text-muted-foreground [&_p]:mt-3 [&_strong]:text-foreground"
       />
 
-      <div class="mt-7 flex flex-wrap gap-3">
-        <a
-          href="#ventures"
-          class="inline-flex items-center rounded-md bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition hover:opacity-90"
-        >
-          {ui.hero.ctaVentures}
-        </a>
-      </div>
-
-      <dl class="mt-9 grid max-w-md grid-cols-3 gap-4">
-        {
-          stats.map((s) => (
-            <div class="rounded-lg border border-border bg-card/50 p-4">
-              <dd class="font-heading text-2xl font-bold text-foreground">{s.value}</dd>
-              <dt class="mt-1 text-xs text-muted-foreground">{s.label}</dt>
-            </div>
-          ))
-        }
-      </dl>
     </div>
 
-    <div class="flex flex-col gap-6 md:sticky md:top-24">
+    <div class="flex flex-col gap-6">
       <!-- terminal card -->
       <div class="animate-fade-up rounded-xl border border-border bg-card/70 shadow-xl backdrop-blur">
         <div class="flex items-center gap-2 border-b border-border px-4 py-3">
@@ -113,6 +100,21 @@ const stats = [
   <span style="color:#22D3EE">clouds</span>: [<span style="color:#34D399">AWS</span>, <span style="color:#34D399">GCP</span>, <span style="color:#34D399">OpenShift</span>]
   <span style="color:#22D3EE">ventures</span>: <span style="color:#7C5CFF">ChimeraNext</span>
   <span style="color:#22D3EE">uptime</span>: <span style="color:#FBBF24">"99.9%"</span></code></pre>
+      </div>
+
+      <!-- KPIs / milestones — clickable -->
+      <div class="grid grid-cols-3 gap-3">
+        {
+          stats.map((s) => (
+            <a
+              href={s.href}
+              class="flex flex-col rounded-md bg-primary px-4 py-3 text-primary-foreground transition hover:opacity-90"
+            >
+              <span class="font-heading text-2xl font-bold">{s.value}</span>
+              <span class="mt-1 text-xs text-primary-foreground/80">{s.label}</span>
+            </a>
+          ))
+        }
       </div>
 
       <!-- link hub -->

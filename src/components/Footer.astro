@@ -13,6 +13,11 @@ const year = 2026;
     class="mx-auto flex max-w-5xl flex-col items-center gap-2 px-5 text-center text-sm text-muted-foreground sm:px-6"
   >
     <p class="font-heading font-semibold text-foreground">{basics.name}</p>
+    <p class="text-xs">
+      <a href={`mailto:${basics.email}`} class="transition hover:text-primary">{basics.email}</a>
+      <span class="px-1">·</span>
+      <a href={`tel:${basics.phone.replace(/[^+\d]/g, "")}`} class="transition hover:text-primary">{basics.phone}</a>
+    </p>
     <p>© {year} · {ui.footer.rights}</p>
     <p class="text-xs">{ui.footer.builtWith}</p>
   </div>
