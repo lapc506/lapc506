@@ -1,0 +1,30 @@
+---
+interface Props {
+  id: string;
+  title: string;
+  subtitle?: string;
+  class?: string;
+  muted?: boolean;
+}
+const { id, title, subtitle, class: className = "", muted = false } = Astro.props;
+---
+
+<section
+  id={id}
+  class:list={[
+    "scroll-mt-20 py-16 sm:py-20 md:py-24",
+    muted && "bg-muted/30",
+    className,
+  ]}
+>
+  <div class="mx-auto w-full max-w-5xl px-5 sm:px-6">
+    <header class="reveal mb-10">
+      <h2 class="font-heading text-2xl font-bold tracking-tight sm:text-3xl">
+        {title}
+      </h2>
+      {subtitle && <p class="mt-2 text-muted-foreground">{subtitle}</p>}
+      <div class="mt-4 h-1 w-16 rounded-full bg-brand-gradient"></div>
+    </header>
+    <slot />
+  </div>
+</section>

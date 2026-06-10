@@ -1,0 +1,103 @@
+@import "@fontsource-variable/sora";
+@import "@fontsource-variable/inter";
+@import "@fontsource-variable/jetbrains-mono";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light theme (derived from Chimera brand) */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 257 30% 12%;
+    --card: 250 40% 98%;
+    --card-foreground: 257 30% 12%;
+    --muted: 250 30% 94%;
+    --muted-foreground: 252 10% 40%;
+    --border: 252 20% 86%;
+    --input: 252 20% 86%;
+    --primary: 252 90% 60%; /* #7C5CFF tuned for light */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 91% 52%;
+    --secondary-foreground: 0 0% 100%;
+    --accent: 330 75% 52%;
+    --accent-foreground: 0 0% 100%;
+    --success: 160 70% 38%;
+    --warning: 38 92% 46%;
+    --ring: 252 90% 60%;
+  }
+
+  /* Dark theme — Chimera (default) */
+  .dark {
+    --background: 257 38% 5%; /* #08060F */
+    --foreground: 260 30% 92%; /* #ECE8F2 */
+    --card: 252 30% 14%; /* #1C1830 */
+    --card-foreground: 260 30% 92%;
+    --muted: 250 24% 12%;
+    --muted-foreground: 252 11% 55%; /* #837C99 */
+    --border: 252 26% 20%; /* #2A2640 */
+    --input: 252 26% 20%;
+    --primary: 252 100% 68%; /* #7C5CFF */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 217 91% 60%; /* #3B82F6 */
+    --secondary-foreground: 0 0% 100%;
+    --accent: 330 81% 60%; /* #EC4899 */
+    --accent-foreground: 0 0% 100%;
+    --success: 160 84% 52%; /* #34D399 */
+    --warning: 43 96% 56%; /* #FBBF24 */
+    --ring: 252 100% 68%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .text-gradient {
+    @apply bg-brand-gradient bg-clip-text text-transparent;
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-full border border-border bg-muted px-2.5 py-0.5 text-xs font-medium text-muted-foreground;
+  }
+
+  /* scroll-reveal — progressive enhancement: content is visible by default;
+     only when JS is present (html.js) do elements start hidden and fade in. */
+  html.js .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  }
+  html.js .reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

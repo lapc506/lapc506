@@ -1,0 +1,271 @@
+{
+  "ventures": {
+    "name": "ChimeraNext",
+    "url": "https://chimeranext.dev",
+    "tagline": "Un stack paraguas de emprendimientos source-available que comparten un núcleo de microservicios de nivel productivo — aislamiento, no contagio.",
+    "items": [
+      {
+        "name": "Vertivolatam",
+        "sector": "AgriTech & IoT",
+        "url": "https://vertivolatam.github.io/monorepo/",
+        "description": "Startup de agricultura vertical urbana — microinvernaderos aeropónicos autónomos. Serverpod, Flutter, Raspberry Pi (Balena), EMQX MQTT, K8s + ArgoCD GitOps. Pre-seed de US $9.500 (Bridge for Billions, 2021)."
+      },
+      {
+        "name": "AduaNext",
+        "sector": "Aduanas & LogisticsTech",
+        "url": "https://github.com/lapc506/proformafasttrack-monorepo",
+        "description": "Agregador de proformas para agencias aduaneras que conecta comercios con agencias para solicitudes de cotización. Full-stack en Dart."
+      },
+      {
+        "name": "AltruPets",
+        "sector": "Bienestar Animal",
+        "url": "https://altrupets.github.io/monorepo/",
+        "description": "App Flutter para protección animal: coordinación de rescates, hogares de acogida, campañas de crowdfunding y denuncias anónimas de maltrato."
+      },
+      {
+        "name": "HabitaNexus",
+        "sector": "PropTech",
+        "url": "https://habitanexus.github.io/monorepo/",
+        "description": "Marketplace de alquiler de vivienda de largo plazo con sistema de negociación digital de contratos. Construido con Flutter."
+      },
+      {
+        "name": "KeikoLatam",
+        "sector": "EdTech & Web3",
+        "url": "https://keikolatam.github.io/dapp-monorepo/",
+        "description": "Colaboración educativa descentralizada con un Life Learning Passport en blockchain (Starknet). Flutter, Dart, GraphQL, gRPC, Cairo, Redis Streams."
+      }
+    ]
+  },
+  "values": {
+    "items": [
+      {
+        "name": "Liberalismo Clásico"
+      },
+      {
+        "name": "Capitalismo Progresista"
+      },
+      {
+        "name": "Economía Social de Mercado"
+      },
+      {
+        "name": "Economía Circular"
+      },
+      {
+        "name": "Límites Planetarios"
+      },
+      {
+        "name": "Estoicismo"
+      }
+    ],
+    "thinkTanks": [
+      {
+        "name": "Friedrich Naumann Foundation for Freedom",
+        "url": "https://www.freiheit.org/central-america"
+      },
+      {
+        "name": "B Lab (B Corp Movement)",
+        "url": "https://www.bcorporation.net/"
+      },
+      {
+        "name": "Ellen MacArthur Foundation",
+        "url": "https://www.ellenmacarthurfoundation.org/"
+      }
+    ]
+  },
+  "services": [
+    {
+      "name": "Apps Multiplataforma y Agentes de IA",
+      "description": "Desarrollo de aplicaciones multiplataforma con Flutter/Dart y orquestación de agentes de IA (n8n, ComfyUI, Node-RED).",
+      "links": [
+        {
+          "label": "Gumroad",
+          "url": "https://gumroad.lapc506.me/l/MultiPlatformAppsAI"
+        }
+      ]
+    },
+    {
+      "name": "Análisis Visual de Datos",
+      "description": "Tableros y analítica con Tableau, Power BI (DAX), Jupyter, pandas y Excel.",
+      "links": [
+        {
+          "label": "Gumroad",
+          "url": "https://gumroad.lapc506.me/l/DataVisualAnalysis"
+        }
+      ]
+    },
+    {
+      "name": "DJ y Producción de EDM",
+      "description": "Sets y producción de música electrónica de baile (Pioneer DDJ-FLX4-W). Transmisiones en vivo y pistas originales.",
+      "links": [
+        {
+          "label": "Twitch",
+          "url": "https://www.twitch.tv/kvttvrsis"
+        },
+        {
+          "label": "SoundCloud",
+          "url": "https://soundcloud.com/lapc506"
+        },
+        {
+          "label": "Ko-fi",
+          "url": "https://ko-fi.com/lapc506"
+        }
+      ]
+    }
+  ],
+  "civicWork": [
+    {
+      "organization": "Asociación de Desarrollo Integral Guararí",
+      "role": "Vocal 3 (2018) · Vocal 1 (2023)",
+      "period": "2018, 2023",
+      "highlights": [
+        "Recuperé los informes financieros históricos de la asociación",
+        "Apoyé la creación del edificio del centro de desarrollo comunitario",
+        "Respaldé la alianza con el MICITT y el programa comunitario de tecnología CECI"
+      ],
+      "links": [
+        {
+          "label": "Project",
+          "url": "https://www.heredia.go.cr/es/gobierno-abierto/proyectos-de-inversion/infraestructura/edificio-para-asociacion-de-desarrollo-de"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://www.facebook.com/adiguarari/"
+        },
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/asociacion_adig/"
+        }
+      ]
+    }
+  ],
+  "ideas": [
+    {
+      "name": "Sazones Semanales",
+      "sector": "ConsumerTech",
+      "description": "App móvil de inventario de despensa del hogar para llevar el control del stock personal de la alacena.",
+      "url": "https://github.com/lapc506/sazones-semanales"
+    },
+    {
+      "name": "MeshCommerceChain",
+      "sector": "Web3 y Comercio",
+      "description": "Alternativa descentralizada a Shopify para ventas con criptomonedas — arquitectura modular de red en malla para productos físicos y digitales.",
+      "url": "https://github.com/lapc506/meshcommercechain-monorepo"
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/lapc506/",
+      "icon": "simple-icons:linkedin",
+      "category": "professional"
+    },
+    {
+      "label": "GitHub",
+      "url": "https://github.com/lapc506",
+      "icon": "simple-icons:github",
+      "category": "professional"
+    },
+    {
+      "label": "Torre.ai",
+      "url": "https://torre.ai/lapc506",
+      "icon": "lucide:briefcase",
+      "category": "professional"
+    },
+    {
+      "label": "AWS re:Post",
+      "url": "https://repost.aws/community/users/USe4l81A6QQpe9TzDsQT-t2w",
+      "icon": "simple-icons:amazonwebservices",
+      "category": "professional"
+    },
+    {
+      "label": "Figma",
+      "url": "https://www.figma.com/@lapc506",
+      "icon": "simple-icons:figma",
+      "category": "professional"
+    },
+    {
+      "label": "Dev.to",
+      "url": "https://dev.to/lapc506",
+      "icon": "simple-icons:devdotto",
+      "category": "professional"
+    },
+    {
+      "label": "Devpost",
+      "url": "https://devpost.com/lapc506",
+      "icon": "simple-icons:devpost",
+      "category": "professional"
+    },
+    {
+      "label": "Medium",
+      "url": "https://lapc506.medium.com/",
+      "icon": "simple-icons:medium",
+      "category": "professional"
+    },
+    {
+      "label": "X",
+      "url": "https://x.com/lapc506",
+      "icon": "simple-icons:x",
+      "category": "social"
+    },
+    {
+      "label": "Threads",
+      "url": "https://threads.com/@_kvttvrsis",
+      "icon": "simple-icons:threads",
+      "category": "social"
+    },
+    {
+      "label": "Mastodon",
+      "url": "https://mastodon.social/@lapc506",
+      "icon": "simple-icons:mastodon",
+      "category": "social"
+    },
+    {
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@this.is.lapc506",
+      "icon": "simple-icons:youtube",
+      "category": "social"
+    },
+    {
+      "label": "SoundCloud",
+      "url": "https://soundcloud.com/lapc506",
+      "icon": "simple-icons:soundcloud",
+      "category": "music"
+    },
+    {
+      "label": "Twitch",
+      "url": "https://www.twitch.tv/kvttvrsis",
+      "icon": "simple-icons:twitch",
+      "category": "music"
+    },
+    {
+      "label": "Ko-fi",
+      "url": "https://ko-fi.com/lapc506",
+      "icon": "simple-icons:kofi",
+      "category": "music"
+    },
+    {
+      "label": "Correo",
+      "url": "mailto:lapc506@gmail.com",
+      "icon": "lucide:mail",
+      "category": "contact"
+    },
+    {
+      "label": "WhatsApp",
+      "url": "https://api.whatsapp.com/send?phone=50689456736",
+      "icon": "simple-icons:whatsapp",
+      "category": "contact"
+    },
+    {
+      "label": "Calendly",
+      "url": "https://calendly.com/lapc506/60min",
+      "icon": "simple-icons:calendly",
+      "category": "contact"
+    },
+    {
+      "label": "CV (PDF)",
+      "url": "https://drive.google.com/file/d/1bSAMTXjZ7UfZjUHGTHxQOMQ7f-lanLSD/view?usp=sharing",
+      "icon": "lucide:file-text",
+      "category": "contact"
+    }
+  ]
+}

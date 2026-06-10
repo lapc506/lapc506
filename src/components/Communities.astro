@@ -1,0 +1,43 @@
+---
+import type { ResumeData } from "../lib/resume";
+import Section from "./Section.astro";
+interface Props {
+  data: ResumeData;
+}
+const { data } = Astro.props;
+const { ui, volunteer } = data;
+const section = ui.sections.communities;
+---
+
+<Section id="communities" title={section.title} subtitle={section.subtitle} muted>
+  <div class="grid gap-4 sm:grid-cols-2">
+    {
+      volunteer.map((item) => (
+        <article class="reveal rounded-lg border border-border bg-card/50 p-5 transition hover:border-primary/50">
+          <div class="mb-3 flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+            <h3 class="font-heading font-semibold">{item.organization}</h3>
+            <span class="shrink-0 text-xs text-muted-foreground">{item.period}</span>
+          </div>
+          {item.location && (
+            <p class="mb-3 text-sm text-muted-foreground">📍 {item.location}</p>
+          )}
+          <div
+            set:html={item.description}
+            class="space-y-2 text-sm text-muted-foreground [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_li]:marker:text-primary [&_p]:mt-2 [&_em]:text-foreground/90 [&_strong]:text-foreground"
+          />
+          {item.website?.url && (
+            <a
+              href={item.website.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="mt-4 inline-flex items-center gap-1 text-sm font-medium text-primary transition hover:opacity-80"
+            >
+              {item.website.label || item.website.url.replace(/^https?:\/\/(www\.)?/, "")}
+              <span aria-hidden="true">↗</span>
+            </a>
+          )}
+        </article>
+      ))
+    }
+  </div>
+</Section>

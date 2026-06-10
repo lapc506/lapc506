@@ -1,0 +1,39 @@
+---
+import type { ResumeData } from "../lib/resume";
+import Section from "./Section.astro";
+interface Props {
+  data: ResumeData;
+}
+const { data } = Astro.props;
+const { ui, portfolio } = data;
+const section = ui.sections.services;
+const services = portfolio.services;
+---
+
+<Section id="services" title={section.title} subtitle={section.subtitle} muted>
+  <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    {
+      services.map((service) => (
+        <article class="reveal flex flex-col rounded-lg border border-border bg-card/50 p-5 transition hover:border-primary/50">
+          <h3 class="font-heading font-semibold">{service.name}</h3>
+          <p class="mt-2 flex-1 text-sm text-muted-foreground">{service.description}</p>
+          {service.links.length > 0 && (
+            <div class="mt-4 flex flex-wrap gap-2">
+              {service.links.map((link) => (
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center rounded-md bg-brand-gradient px-3 py-1.5 text-xs font-semibold text-primary-foreground transition hover:opacity-90"
+                >
+                  {link.label}
+                  <span aria-hidden="true" class="ml-1.5">↗</span>
+                </a>
+              ))}
+            </div>
+          )}
+        </article>
+      ))
+    }
+  </div>
+</Section>

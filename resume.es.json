@@ -1,0 +1,954 @@
+{
+  "$schema": "https://rxresu.me/schema.json",
+  "picture": {
+    "hidden": true,
+    "url": "",
+    "size": 64,
+    "rotation": 0,
+    "aspectRatio": 1,
+    "borderRadius": 0,
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "borderWidth": 0,
+    "shadowColor": "rgba(0, 0, 0, 0)",
+    "shadowWidth": 0
+  },
+  "basics": {
+    "name": "Andrés Peña Castillo",
+    "headline": "Site Reliability Engineer | Emprendedor Serial | 10+ Anos en Tecnologia",
+    "email": "lapc506@gmail.com",
+    "phone": "(+506) 8945-6736",
+    "location": "Heredia, Costa Rica",
+    "website": {
+      "url": "https://lapc506.me",
+      "label": "lapc506.me"
+    },
+    "customFields": [
+      {
+        "id": "e1bde6e0-7da0-4a02-9c14-b248ca5b06f5",
+        "icon": "",
+        "text": "linkedin.com/in/lapc506",
+        "link": "https://www.linkedin.com/in/lapc506"
+      }
+    ]
+  },
+  "summary": {
+    "title": "Perfil Profesional",
+    "columns": 1,
+    "hidden": false,
+    "content": "<p>Site Reliability Engineer y emprendedor serial con mas de 10 anos de experiencia en la industria de tecnologia, habiendo trabajado en empresas multinacionales como IBM, Western Union, Roche, Hewlett Packard Enterprise y Provectus.</p><p>Mis areas de expertise incluyen Site Reliability Engineering (gestion de Cloud y Clusters usando GitOps), Patch Management y Endpoints Administration. CTO y co-fundador de startups en los sectores EdTech, AgriTech y Web3.</p>"
+  },
+  "sections": {
+    "profiles": {
+      "title": "Perfiles",
+      "columns": 2,
+      "hidden": false,
+      "items": [
+        {
+          "id": "b1a31d31-3e14-493e-a437-7116b4565ac1",
+          "hidden": false,
+          "icon": "",
+          "network": "LinkedIn",
+          "username": "lapc506",
+          "website": {
+            "url": "https://www.linkedin.com/in/lapc506",
+            "label": ""
+          }
+        },
+        {
+          "id": "a4f22d4f-bd45-46eb-a1fa-2467fbe50d0e",
+          "hidden": false,
+          "icon": "",
+          "network": "GitHub",
+          "username": "lapc506",
+          "website": {
+            "url": "https://github.com/lapc506",
+            "label": ""
+          }
+        },
+        {
+          "id": "ecd941c6-82c2-4e06-85db-ca3602a1f2bb",
+          "hidden": false,
+          "icon": "",
+          "network": "Website",
+          "username": "lapc506.me",
+          "website": {
+            "url": "https://lapc506.me",
+            "label": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia Profesional",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "90790c85-f21a-403c-8ace-57522065dc15",
+          "hidden": false,
+          "company": "DojoCoding Labs",
+          "position": "Freelance Full-Stack & Infrastructure Engineer",
+          "location": "Remoto",
+          "period": "Mar 2026 – Actualidad",
+          "website": {
+            "url": "https://dojocoding.io/",
+            "label": "dojocoding.io"
+          },
+          "description": "",
+          "roles": [
+            {
+              "id": "a907c09a-d99c-4317-9aba-e67f329b9a1c",
+              "position": "Dojo OS — Plataforma EdTech SaaS (Supabase + React + Edge Functions)",
+              "period": "Mar 2026 – Actualidad",
+              "description": "<ul><li>Security hardening integral: rate limiting en funciones serverless criticas, correccion de politicas RLS excesivamente permisivas, listas de campos permitidos contra mass-assignment, y linter SQL pre-commit para prevenir escalaciones de privilegios</li><li>Integracion de CAPTCHA anti-bot en formularios de registro y recuperacion de contrasena</li><li>Creacion de tabla de auditoria de seguridad e instrumentacion de funciones serverless para trazabilidad completa</li><li>Escritura de tests de integracion para validar politicas de acceso a datos en tablas criticas</li><li>Migracion de pipelines de CI/CD a runners auto-hospedados en Google Compute Engine</li><li>Habilitacion del chat con agente de IA en produccion con sincronizacion de estado post-streaming y enriquecimiento contextual con datos de cursos</li></ul>"
+            },
+            {
+              "id": "983a2b8f-a139-4245-b4c2-fb9ff2d7d635",
+              "position": "Dojo Agent — Plugin de Claude Code para Gestion Autonoma de Proyectos",
+              "period": "Mar 2026 – Actualidad",
+              "description": "<ul><li>Conjunto de herramientas para integracion bidireccional con el gestor de proyectos: creacion, actualizacion, comentarios, consulta de proyectos y ciclos de sprint</li><li>Endpoint de webhook para revision automatica de pull requests</li><li>Herramienta de busqueda semantica en historial de canales de mensajeria del equipo</li><li>Herramienta de consulta SQL segura con descripciones de esquema auto-generadas y funciones de acceso controlado</li><li>Sistema de memoria persistente del agente con ponderacion de relevancia y categorizacion</li><li>Suite de 31+ tests E2E para busqueda en grafo y capacidad de auto-reparacion</li><li>Herramienta de brainstorming estructurado en 21 fases para generacion de Business Model Canvas</li></ul>"
+            },
+            {
+              "id": "8555383d-9040-44d7-809e-585eb7baa9c7",
+              "position": "Freedom Academy — Infraestructura GCP para LMS Educativo (OpenTofu + Bash)",
+              "period": "2026",
+              "description": "<ul><li>Diseno e implementacion de modulos IaC: base de datos relacional gestionada, cache en memoria, y computo con scripts de aprovisionamiento automatico</li><li>Configuracion de elasticidad con grupos de instancias gestionadas, balanceador de carga y autoescalado</li><li>Implementacion de WAF, alertas de monitoreo y estrategia de backups automatizados</li><li>Configuracion de certificados SSL/TLS y migracion completa de dominio a produccion</li><li>Pipeline de exportacion de datos de estudiantes con esquema relacional y cumplimiento de privacidad (GDPR)</li><li>Documentacion completa: traspaso de credenciales, playbook de respuesta a incidentes, runbook de despliegue, y matriz de roles y permisos cloud</li></ul>"
+            },
+            {
+              "id": "314e0cbc-fb1a-4996-8b3c-34667dd419aa",
+              "position": "Freedom Academy — Suite de Plugins Custom para LMS Educativo (PHP)",
+              "period": "2026",
+              "description": "<ul><li>Enrollment por Partners: plugin de matriculacion con gestion individual de estudiantes, estadisticas agregadas, tablero kanban del journey del estudiante, y exportacion de reportes delimitada por organizacion</li><li>Rastreo de Campanas: seguimiento de campanas de marketing con integracion a plataformas de analytics, reporte de funnel de rendimiento y tests automatizados con mocks HTTP</li><li>Automatizacion de Journeys: motor de automatizacion del recorrido del estudiante con disparadores basados en evaluaciones, emision de certificados, editor visual de reglas para administradores no tecnicos, dashboard de metricas con notificaciones push</li><li>Dashboard Centralizado: panel de control nativo con RBAC (administrador/partner/staff), agregadores de datos, vistas personalizadas, y exportacion de reportes por organizacion</li><li>Retroalimentacion con IA: plugin de feedback impulsado por IA con documentacion de investigacion sobre motores de lenguaje natural</li></ul>"
+            }
+          ],
+          "skills": [
+            "Supabase",
+            "React",
+            "GitHub Actions",
+            "Compute Engine",
+            "OpenTofu",
+            "Bash",
+            "PHP",
+            "Claude Code",
+            "SQL"
+          ]
+        },
+        {
+          "id": "7232629d-8137-44ce-ba58-ecb580a1bdfb",
+          "hidden": false,
+          "company": "IBM",
+          "position": "Site Reliability Engineer",
+          "location": "Remoto",
+          "period": "Feb 2024 – Sept 2025",
+          "website": {
+            "url": "https://www.ibm.com",
+            "label": ""
+          },
+          "description": "<p><em>Maximo Application Suite y Maximo Manage</em></p><ul><li>Administracion de Red Hat OpenShift en multiples clusters en AWS, modificando manualmente manifiestos YAML de CRDs y operadores</li><li>Administracion de IBM WebSphere (WAS) en multiples servidores RHEL</li><li>Despliegue de upgrades de aplicaciones MAS usando workflows GitOps de ArgoCD</li><li>Observabilidad de aplicaciones con IBM Instana y Grafana</li><li>Composicion de runbooks y articulos de knowledge base en GitHub Pages y Confluence</li><li>Respuesta a incidentes en tiempo real usando IBM On Call Manager, PagerDuty y Salesforce Lightning</li><li>Construccion de multiples scripts Bash para automatizacion y recuperacion de datos de OpenShift y WebSphere</li><li>Soporte de upgrades mayores incluyendo de MAS 8 a 9.1 y de 9.0 a 9.1.2</li><li>Documentacion de escenario de Disaster Recovery para Db2U Standalone en clusters de OpenShift</li></ul>",
+          "roles": [],
+          "skills": [
+            "OpenShift",
+            "ArgoCD",
+            "IBM Instana",
+            "Grafana",
+            "RHEL",
+            "Bash",
+            "PagerDuty",
+            "Salesforce Lightning",
+            "IBM DB2",
+            "Oracle",
+            "MongoDB",
+            "SQL"
+          ]
+        },
+        {
+          "id": "d8e6dfa9-192a-412a-8e06-2615c9ad8a77",
+          "hidden": false,
+          "company": "Provectus",
+          "position": "IT Cloud Engineer",
+          "location": "Remoto",
+          "period": "Sept 2021 – Nov 2023",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><em>Contratista de consultoria para Model N</em></p><ul><li>Soporte para suites de gestion de dispositivos ManageEngine Desktop Central y Jamf Cloud MDM</li><li>Desarrollo de workflows automatizados de Patch Management para parches mensuales de Windows y macOS</li><li>Scripts personalizados en PowerShell para programacion de System Restore Points, bloqueo de actualizaciones de Windows 11, y analisis de causa raiz de fallos en despliegue de parches</li><li>Upgrade exitoso de +1.100 endpoints de Windows 10 v1703 a 21H2 (Agosto 2022)</li><li>Implementacion exitosa de upgrades manuales de macOS Monterey 12.5 a Ventura 13.6 via Jamf Cloud con script Bash personalizado para Macs Intel y Apple Silicon</li></ul>",
+          "roles": [],
+          "skills": [
+            "ManageEngine",
+            "Jamf Pro",
+            "PowerShell",
+            "Active Directory",
+            "Bash"
+          ]
+        },
+        {
+          "id": "051c4d42-2ef8-4ab0-9644-5432e919f197",
+          "hidden": false,
+          "company": "Roche Services & Solutions",
+          "position": "Senior Service Desk Agent",
+          "location": "Costa Rica",
+          "period": "Sept 2020 – Sept 2021",
+          "website": {
+            "url": "https://www.roche.com",
+            "label": ""
+          },
+          "description": "<ul><li>Gestion de incidentes y solicitudes IT en ServiceNow ITSM siguiendo el framework ITIL v3</li><li>Soporte L1 para Google Suite, Microsoft Office, SAP, herramientas de conferencias (Webex, Google Meet) y aplicaciones macOS</li><li>Soporte L1 para hardware estandar y de excepcion (laptops, desktops, tablets, dispositivos moviles, monitores, impresoras)</li><li>Implementacion de una herramienta personalizada de reporteria de analisis de problemas para mejora continua, sistematizando el analisis de causa raiz para sugerir recomendaciones proactivas de cambio</li></ul>",
+          "roles": [],
+          "skills": [
+            "ServiceNow",
+            "Jamf Pro",
+            "Google Sheets"
+          ]
+        },
+        {
+          "id": "2a7709f2-5ad9-41be-b16e-b9bd698b91d8",
+          "hidden": false,
+          "company": "Western Union",
+          "position": "End User Support Specialist (L3)",
+          "location": "Costa Rica",
+          "period": "Feb 2018 – May 2020",
+          "website": {
+            "url": "https://www.westernunion.com",
+            "label": ""
+          },
+          "description": "<p><em>EUC Desktop Engineering</em></p><ul><li>Mantenimiento de computadoras actualizadas a traves de WSUS</li><li>Construccion de scripts PowerShell para nuevos paquetes de instalacion, planificando su distribucion masiva via Tanium</li><li>Revision de vulnerabilidades en Qualys VMDR y alertas de error en Pulse Secure</li><li>Rastreo de errores del sistema operativo via Event Viewer, usando CMTrace para interpretar archivos de log</li><li>Despliegue de nuevas aplicaciones usando VMware Horizon con AppStacks y User Environment Manager</li><li>Traduccion de scripts legacy de batch a PowerShell 5.1, completando la migracion de IBM BigFix a Tanium (2019)</li><li>Deteccion de la causa raiz de fallos de Windows Update que afectaron +1.000 endpoints en Latinoamerica y estados de USA (2019): corrupcion de registros de base de datos WSUS, restablecida por ingenieros de Microsoft</li><li>Descubrimiento de un bug inesperado en el Feature Upgrade de Microsoft de Octubre 2018 (error 0x80070070); se establecio una nueva politica corporativa para System Restore Points en todos los endpoints de Windows 10</li></ul>",
+          "roles": [],
+          "skills": [
+            "WSUS",
+            "PowerShell",
+            "Tanium",
+            "Qualys VMDR",
+            "Pulse Secure",
+            "Event Viewer",
+            "ServiceNow",
+            "VMware Horizon",
+            "BigFix",
+            "Tableau",
+            "Power BI"
+          ]
+        },
+        {
+          "id": "1ebe5888-9e3b-485c-8d5e-82b96b2399b8",
+          "hidden": false,
+          "company": "Western Union",
+          "position": "Technical Support Technician (L1)",
+          "location": "Costa Rica",
+          "period": "Jan 2017 – Jan 2018",
+          "website": {
+            "url": "https://www.westernunion.com",
+            "label": ""
+          },
+          "description": "<ul><li>Soporte a usuarios finales atendiendo incidentes y solicitudes IT, escalamiento de issues y cooperacion con equipos IT de siguiente nivel</li><li>Soporte de outages IT segun el Business Continuity Plan</li><li>Actualizacion de multiples articulos de Knowledge Base en ServiceNow ITSM</li></ul>",
+          "roles": [],
+          "skills": [
+            "ServiceNow",
+            "Active Directory",
+            "Okta SSO",
+            "VMware Horizon",
+            "Pulse Secure"
+          ]
+        },
+        {
+          "id": "98e062f8-43d6-43b6-a0b7-ea2b68176dbd",
+          "hidden": false,
+          "company": "Hewlett Packard Enterprise (DXC)",
+          "position": "Customer Solution Center Technician",
+          "location": "Costa Rica",
+          "period": "Nov 2015 – Dec 2016",
+          "website": {
+            "url": "https://www.dxc.com",
+            "label": ""
+          },
+          "description": "<p><em>Pfizer Global Service Desk</em></p><ul><li>Soporte de RightFax en el equipo de Pfizer Printing Support, configurando el BIOS interno de impresoras HP desplegadas en los edificios de Pfizer</li><li>Levantamiento de incidentes mayores que afectaban a Pfizer a mayor escala, incluyendo outages en el HQ de New York</li><li>Gestion de incidentes y solicitudes IT via ServiceNow ITSM siguiendo procesos ITIL v3</li><li>Promocion al equipo de L2 Printing Support</li></ul>",
+          "roles": [],
+          "skills": [
+            "ServiceNow",
+            "Cisco AnyConnect",
+            "Oracle"
+          ]
+        },
+        {
+          "id": "82d719e6-8e66-4cfe-a6cc-bc0a4b96fb61",
+          "hidden": false,
+          "company": "Perfiles Tecnológicos",
+          "position": "Technical Support Representative",
+          "location": "Costa Rica",
+          "period": "Dec 2014 – Nov 2015",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": "<p><em>Contratista para HPE en Pfizer GSD</em></p><ul><li>Gestion de incidentes y solicitudes IT via ServiceNow ITSM siguiendo procesos ITIL v3</li><li>Soporte de la transicion de Windows XP a Windows 8/8.1 para computadoras de Pfizer (2015)</li><li>Soporte de los esfuerzos de integracion de colegas de Hospira tras la adquisicion de Pfizer</li><li>Construccion de una herramienta custom estilo marquee usando HTML5 y jQuery para reducir el ruido ambiental durante outages IT, mejorando las tasas de satisfaccion en multiples cuentas (Pfizer, Universal Music Group, Grupo Bimbo, Under Armour)</li></ul>",
+          "roles": [],
+          "skills": [
+            "ServiceNow",
+            "Active Directory"
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Educacion",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "2cf0e46c-2010-4e89-a01d-5154d3954188",
+          "hidden": false,
+          "school": "Instituto Tecnológico de Costa Rica",
+          "degree": "Bachillerato Universitario",
+          "area": "Ingenieria en Computacion",
+          "grade": "",
+          "location": "Cartago, Costa Rica",
+          "period": "En Hiatus",
+          "website": {
+            "url": "https://www.tec.ac.cr",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "567b4e4e-8819-4ad1-a0d3-a5697c1f6a23",
+          "hidden": false,
+          "school": "Colegio Técnico Profesional de Flores",
+          "degree": "Diploma Tecnico",
+          "area": "Soporte Tecnico en Tecnologias de Informacion",
+          "grade": "",
+          "location": "Heredia, Costa Rica",
+          "period": "2011 – 2013",
+          "website": {
+            "url": "",
+            "label": ""
+          },
+          "description": ""
+        }
+      ]
+    },
+    "projects": {
+      "title": "Startups & Proyectos Destacados",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "0817db75-b174-45b1-95d6-caa462b85817",
+          "hidden": false,
+          "name": "Vertivo — AgriTech & IoT",
+          "period": "2021",
+          "website": {
+            "url": "https://github.com/vertivolatam/monorepo",
+            "label": "GitHub"
+          },
+          "description": "<p>Startup de agricultura vertical urbana incubada en Bridge for Billions (2021). Fabricacion y gestion remota de MicroInvernaderos Aeroponicos Autonomos. Monorepo con Serverpod backend, Flutter app, Raspberry Pi orchestrator (Balena), EMQX MQTT, K8s + ArgoCD GitOps. Pre-seed de US $9.500 levantado con Auge-UCR. Finalistas con mencion honorifica en Road to Innovate Central America (Friedrich Naumann Foundation).</p>"
+        },
+        {
+          "id": "7dd88ac4-612a-4535-a9c9-54b0ce71a911",
+          "hidden": false,
+          "name": "AltruPets — Animal Welfare",
+          "period": "2022",
+          "website": {
+            "url": "https://github.com/altrupets/monorepo",
+            "label": "GitHub"
+          },
+          "description": "<p>Aplicacion movil en Flutter para proteccion animal: coordinacion de rescates, hogares de acogida, campanas de crowdfunding y denuncias anonimas de maltrato animal.</p>"
+        },
+        {
+          "id": "2d4a5d3f-1a5b-45c6-bfa8-15064781f367",
+          "hidden": false,
+          "name": "HabitaNexus — PropTech",
+          "period": "2023",
+          "website": {
+            "url": "https://github.com/lapc506/habitanexus",
+            "label": "GitHub"
+          },
+          "description": "<p>Plataforma de gestion de bienes raices desarrollada en Dart/Flutter.</p>"
+        },
+        {
+          "id": "2436ef56-8635-401f-bf56-37f4f23de93e",
+          "hidden": false,
+          "name": "KeikoStart — EdTech & Web3",
+          "period": "2023",
+          "website": {
+            "url": "https://github.com/keikolatam/dapp-monorepo",
+            "label": "GitHub"
+          },
+          "description": "<p>Plataforma de colaboracion educativa descentralizada con Life Learning Passport basado en micro-credenciales sobre blockchain (Starknet). Arquitectura modular de 5 capas usando Flutter, Dart, GraphQL, gRPC, Starknet/Cairo, Redis Streams.</p>"
+        }
+      ]
+    },
+    "skills": {
+      "title": "Habilidades Tecnicas",
+      "columns": 2,
+      "hidden": false,
+      "items": [
+        {
+          "id": "2071248b-f38d-4cce-9512-108d6652341a",
+          "hidden": false,
+          "icon": "",
+          "name": "Containerizacion",
+          "proficiency": "Avanzado",
+          "level": 5,
+          "keywords": [
+            "OpenShift",
+            "Kubernetes",
+            "Minikube",
+            "Podman",
+            "GHCR"
+          ]
+        },
+        {
+          "id": "0d27ffb4-483c-49f5-8cec-fe33545b0205",
+          "hidden": false,
+          "icon": "",
+          "name": "Automatizacion",
+          "proficiency": "Avanzado",
+          "level": 5,
+          "keywords": [
+            "Ansible",
+            "AWX",
+            "Bash",
+            "PowerShell",
+            "Python"
+          ]
+        },
+        {
+          "id": "2c84a656-edae-43b0-974d-07bd9f811736",
+          "hidden": false,
+          "icon": "",
+          "name": "Observabilidad",
+          "proficiency": "Avanzado",
+          "level": 4,
+          "keywords": [
+            "IBM Instana",
+            "Grafana",
+            "Datadog",
+            "Mezmo",
+            "CloudWatch"
+          ]
+        },
+        {
+          "id": "99b8bcfd-9c65-430e-a0e1-5aa3d5255fc9",
+          "hidden": false,
+          "icon": "",
+          "name": "GitOps & CI/CD",
+          "proficiency": "Avanzado",
+          "level": 5,
+          "keywords": [
+            "ArgoCD",
+            "Helm",
+            "GitHub Actions",
+            "GitFlow"
+          ]
+        },
+        {
+          "id": "ed3e933f-dc09-4f9d-ad2b-23e8cf9a53e9",
+          "hidden": false,
+          "icon": "",
+          "name": "Infrastructure-as-Code",
+          "proficiency": "Avanzado",
+          "level": 4,
+          "keywords": [
+            "Terraform",
+            "OpenTofu",
+            "CloudFormation"
+          ]
+        },
+        {
+          "id": "4848b214-044e-49a3-b14b-6cd96149fc97",
+          "hidden": false,
+          "icon": "",
+          "name": "AWS Cloud",
+          "proficiency": "Avanzado",
+          "level": 4,
+          "keywords": [
+            "EC2",
+            "IAM",
+            "Lambda",
+            "SQS",
+            "SNS",
+            "Route 53",
+            "IoT Core",
+            "SageMaker"
+          ]
+        },
+        {
+          "id": "bcee7c84-5567-4f4d-b2a7-5989bfe072f3",
+          "hidden": false,
+          "icon": "",
+          "name": "GCP Cloud",
+          "proficiency": "Intermedio",
+          "level": 3,
+          "keywords": [
+            "Cloud SQL",
+            "Compute Engine",
+            "Memorystore",
+            "Cloud Armor",
+            "Vertex AI"
+          ]
+        },
+        {
+          "id": "727aee02-37aa-4081-80aa-23733d3e7648",
+          "hidden": false,
+          "icon": "",
+          "name": "MLOps & AI",
+          "proficiency": "Intermedio",
+          "level": 3,
+          "keywords": [
+            "LangChain",
+            "LangGraph",
+            "LangSmith",
+            "LangFuse",
+            "Airflow",
+            "Kubeflow",
+            "MLFlow",
+            "OpenCV"
+          ]
+        },
+        {
+          "id": "c8ca9260-7a8c-4e54-9058-4aae204e6484",
+          "hidden": false,
+          "icon": "",
+          "name": "Patch Management",
+          "proficiency": "Avanzado",
+          "level": 5,
+          "keywords": [
+            "ManageEngine",
+            "WSUS",
+            "Qualys VMDR"
+          ]
+        },
+        {
+          "id": "b230993f-1013-4924-b770-fd22846c8496",
+          "hidden": false,
+          "icon": "",
+          "name": "LDAP & Identidad",
+          "proficiency": "Avanzado",
+          "level": 4,
+          "keywords": [
+            "Active Directory",
+            "AGPM",
+            "Okta SSO",
+            "Duo Security",
+            "Entrust"
+          ]
+        },
+        {
+          "id": "976af090-147f-47dc-91bd-6209c15c339d",
+          "hidden": false,
+          "icon": "",
+          "name": "ITSM (ITIL v3)",
+          "proficiency": "Avanzado",
+          "level": 5,
+          "keywords": [
+            "ServiceNow",
+            "Salesforce Lightning",
+            "Jira",
+            "PagerDuty"
+          ]
+        },
+        {
+          "id": "5ee0bc6f-b6f1-46c1-bb14-69ff0bb6378d",
+          "hidden": false,
+          "icon": "",
+          "name": "Administracion Windows & macOS",
+          "proficiency": "Avanzado",
+          "level": 5,
+          "keywords": [
+            "Tanium",
+            "BigFix",
+            "SCCM",
+            "MDT",
+            "Jamf Pro",
+            "Apple DEP"
+          ]
+        },
+        {
+          "id": "ddd9cf90-df20-46e6-9e0e-4545591fa960",
+          "hidden": false,
+          "icon": "",
+          "name": "Mobile & Frontend",
+          "proficiency": "Avanzado",
+          "level": 4,
+          "keywords": [
+            "Flutter",
+            "Dart",
+            "Riverpod",
+            "Rive",
+            "React"
+          ]
+        },
+        {
+          "id": "1be18265-9a90-44d0-a1d4-16d4cccfb246",
+          "hidden": false,
+          "icon": "",
+          "name": "Backend & Plataformas",
+          "proficiency": "Intermedio",
+          "level": 3,
+          "keywords": [
+            "Supabase",
+            "GraphQL",
+            "gRPC",
+            "Redis",
+            "PHP",
+            "Cloudflare",
+            "n8n"
+          ]
+        },
+        {
+          "id": "542d7437-3dd7-4d25-b544-c792b9ca1bfe",
+          "hidden": false,
+          "icon": "",
+          "name": "Data & Analytics",
+          "proficiency": "Intermedio",
+          "level": 3,
+          "keywords": [
+            "Tableau",
+            "Looker Studio",
+            "Power BI",
+            "SQL",
+            "IBM DB2",
+            "Oracle",
+            "MongoDB"
+          ]
+        },
+        {
+          "id": "d2b69d3f-3d94-45d6-83d0-e02c8896455c",
+          "hidden": false,
+          "icon": "",
+          "name": "Gestion de Proyectos",
+          "proficiency": "Avanzado",
+          "level": 4,
+          "keywords": [
+            "ClickUp",
+            "Notion",
+            "Confluence",
+            "Scrum",
+            "Management 3.0"
+          ]
+        }
+      ]
+    },
+    "languages": {
+      "title": "Idiomas",
+      "columns": 3,
+      "hidden": false,
+      "items": [
+        {
+          "id": "3d8972f7-0a6c-4cca-9207-d6fa22a89125",
+          "hidden": false,
+          "language": "Espanol",
+          "fluency": "Nativo",
+          "level": 5
+        },
+        {
+          "id": "c1964721-ca27-454c-841d-3235379d191c",
+          "hidden": false,
+          "language": "Ingles",
+          "fluency": "C1",
+          "level": 4
+        },
+        {
+          "id": "a22935f0-031c-4154-be1e-01198fca6b41",
+          "hidden": false,
+          "language": "Portugues",
+          "fluency": "A2 (Comprension lectora y auditiva)",
+          "level": 2
+        }
+      ]
+    },
+    "interests": {
+      "title": "Intereses",
+      "columns": 2,
+      "hidden": false,
+      "items": [
+        {
+          "id": "557cd721-ee6d-4e57-8abb-26ec1a7de256",
+          "hidden": false,
+          "icon": "",
+          "name": "DJ & Produccion Musical",
+          "keywords": [
+            "Electronic Dance Music",
+            "Pioneer DDJ-FLX4-W",
+            "Festivales de Musica"
+          ]
+        },
+        {
+          "id": "7283d472-d27f-4e82-bcab-f89356967a7a",
+          "hidden": false,
+          "icon": "",
+          "name": "Automovilismo & Aire Libre",
+          "keywords": [
+            "Formula 1",
+            "Karts",
+            "Canopy",
+            "Exploracion de la Naturaleza"
+          ]
+        }
+      ]
+    },
+    "awards": {
+      "title": "Premios",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "certifications": {
+      "title": "Certificaciones",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "9883c11b-e188-4d95-8bc1-3c7bb4db85da",
+          "hidden": false,
+          "title": "PIEA 2023 — Programa de Aceleracion y Mentoria de Proyectos Agroindustriales",
+          "issuer": "INCAE Business School & Invermaster Ventures",
+          "date": "2023",
+          "website": {
+            "url": "https://www.incae.edu/",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "32a9232c-4999-42d5-aba9-46e95f173196",
+          "hidden": false,
+          "title": "Innovate Programme 2022 — Incubacion de Startups en Etapa Temprana",
+          "issuer": "Friedrich Naumann Stiftung für die Freiheit",
+          "date": "2022",
+          "website": {
+            "url": "https://www.freiheit.org/central-america",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "c4a9618b-9cc1-42ba-87da-ddea80925ce2",
+          "hidden": false,
+          "title": "The Leap Incubation Program — Incubacion de Startups en Etapa Temprana",
+          "issuer": "Bridge for Billions",
+          "date": "2021",
+          "website": {
+            "url": "https://www.bridgeforbillions.org/incubation-programs/",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "c45f2eaa-f580-4e41-9076-065b044456e3",
+          "hidden": false,
+          "title": "Scrum Product Owner Professional",
+          "issuer": "CertiProf",
+          "date": "2020",
+          "website": {
+            "url": "https://certiprof.com/pages/scrum-product-owner-professional-certificate-spopc",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "37a309a3-bed4-4568-b057-41067a778609",
+          "hidden": false,
+          "title": "User Stories Foundation",
+          "issuer": "CertiProf",
+          "date": "2020",
+          "website": {
+            "url": "https://certiprof.com/pages/user-stories-foundation-certificate-usfc",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "066672f6-2c25-421d-9349-d56903b6b509",
+          "hidden": false,
+          "title": "Scrum Foundation Professional",
+          "issuer": "CertiProf",
+          "date": "2020",
+          "website": {
+            "url": "https://certiprof.com/pages/scrum-foundation-professional-certificate-sfpc",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "363ced55-b633-476b-b766-c782f4bd1a12",
+          "hidden": false,
+          "title": "Management 3.0 Fundamentals",
+          "issuer": "Management 3.0 / F&M Consulting Perú",
+          "date": "2020",
+          "website": {
+            "url": "https://management30.com/workshops/fundamentals-online-workshop/",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "062a95ab-a4b9-42c6-b9c8-c90b180dac19",
+          "hidden": false,
+          "title": "Tableau 2019.2 Intermediate — Preparacion para Tableau Desktop Certified Associate",
+          "issuer": "Prisma Análisis Costa Rica",
+          "date": "2019",
+          "website": {
+            "url": "https://prisma-analisis.com/",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "1546ec1c-7dc9-4451-8039-19d3d7218aba",
+          "hidden": false,
+          "title": "Cambridge English B1 CEFR — English for Speakers of Other Languages",
+          "issuer": "University of Cambridge",
+          "date": "2013",
+          "website": {
+            "url": "https://www.cambridgeenglish.org/exams-and-tests/preliminary/",
+            "label": ""
+          },
+          "description": ""
+        },
+        {
+          "id": "e9fdd523-23da-4d45-afa2-047857a42080",
+          "hidden": false,
+          "title": "Cisco IT Essentials",
+          "issuer": "Cisco Networking Academy & Fundación Omar Dengo",
+          "date": "2011",
+          "website": {
+            "url": "https://www.netacad.com/courses/os-it/it-essentials",
+            "label": ""
+          },
+          "description": ""
+        }
+      ]
+    },
+    "publications": {
+      "title": "Publicaciones",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    },
+    "volunteer": {
+      "title": "Comunidades",
+      "columns": 1,
+      "hidden": false,
+      "items": [
+        {
+          "id": "b4f0545d-6d44-4856-904a-0e244a9e6775",
+          "hidden": false,
+          "organization": "Ciencia de Datos en Latinoamérica",
+          "location": "LinkedIn",
+          "period": "Jul 2019 – Actualidad",
+          "website": {
+            "url": "https://www.linkedin.com/groups/8951267/",
+            "label": ""
+          },
+          "description": "<p>Comunidad de LinkedIn con ~3.000 miembros enfocada en Ciencia de Datos en Latinoamérica. Fundador y administrador.</p>"
+        },
+        {
+          "id": "7f240ea8-4aa1-4aa8-b8d9-b497ac06b32d",
+          "hidden": false,
+          "organization": "Flutter Apps en Latinoamérica",
+          "location": "LinkedIn",
+          "period": "Aug 2025 – Actualidad",
+          "website": {
+            "url": "https://www.linkedin.com/groups/13155519/",
+            "label": ""
+          },
+          "description": "<p>Comunidad de LinkedIn para desarrolladores de Flutter en Latinoamerica.</p>"
+        },
+        {
+          "id": "8a99fa72-16c4-457a-ad93-a42bcbea6ec9",
+          "hidden": false,
+          "organization": "Startups 506",
+          "location": "Costa Rica",
+          "period": "2022 – 2024",
+          "website": {
+            "url": "https://linktr.ee/startups506",
+            "label": ""
+          },
+          "description": "<p>Co-fundador y co-administrador de una comunidad de startups en Costa Rica.</p>"
+        }
+      ]
+    },
+    "references": {
+      "title": "Referencias",
+      "columns": 1,
+      "hidden": true,
+      "items": []
+    }
+  },
+  "customSections": [],
+  "metadata": {
+    "template": "onyx",
+    "layout": {
+      "sidebarWidth": 35,
+      "pages": [
+        {
+          "fullWidth": false,
+          "main": [
+            "summary",
+            "experience"
+          ],
+          "sidebar": [
+            "profiles",
+            "skills",
+            "languages"
+          ]
+        },
+        {
+          "fullWidth": false,
+          "main": [
+            "experience",
+            "projects"
+          ],
+          "sidebar": [
+            "certifications",
+            "volunteer",
+            "interests"
+          ]
+        }
+      ]
+    },
+    "css": {
+      "enabled": false,
+      "value": ""
+    },
+    "page": {
+      "gapX": 12,
+      "gapY": 8,
+      "marginX": 18,
+      "marginY": 18,
+      "format": "a4",
+      "locale": "es-ES",
+      "hideIcons": false
+    },
+    "design": {
+      "level": {
+        "icon": "",
+        "type": "circle"
+      },
+      "colors": {
+        "primary": "rgba(33, 82, 120, 1)",
+        "text": "rgba(0, 0, 0, 1)",
+        "background": "rgba(255, 255, 255, 1)"
+      }
+    },
+    "typography": {
+      "body": {
+        "fontFamily": "IBM Plex Sans",
+        "fontWeights": [
+          "400"
+        ],
+        "fontSize": 10,
+        "lineHeight": 1.4
+      },
+      "heading": {
+        "fontFamily": "IBM Plex Sans",
+        "fontWeights": [
+          "600"
+        ],
+        "fontSize": 12,
+        "lineHeight": 1.3
+      }
+    },
+    "notes": ""
+  }
+}

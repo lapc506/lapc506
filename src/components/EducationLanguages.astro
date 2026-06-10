@@ -1,0 +1,91 @@
+---
+import type { ResumeData } from "../lib/resume";
+import Section from "./Section.astro";
+interface Props {
+  data: ResumeData;
+}
+const { data } = Astro.props;
+const { ui, education, languages } = data;
+const eduSection = ui.sections.education;
+const langSection = ui.sections.languages;
+const title =
+  data.locale === "es" ? "Educación Formal & Idiomas" : "Formal Education & Languages";
+const proseClass =
+  "mt-3 space-y-2 text-sm text-muted-foreground [&_ul]:list-disc [&_ul]:space-y-1 [&_ul]:pl-5 [&_li]:marker:text-primary [&_p]:mt-2 [&_em]:text-foreground/90 [&_strong]:text-foreground";
+---
+
+<Section id="education" title={title}>
+  <div class="grid gap-10 md:grid-cols-2">
+    <!-- Column 1: Formal Education -->
+    <div>
+      <h3 class="mb-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        {eduSection.title}
+      </h3>
+      <div class="space-y-4">
+        {
+          education.map((item) => (
+            <article class="reveal rounded-lg border border-border bg-card/50 p-5 transition hover:border-primary/50">
+              <div class="flex items-start justify-between gap-3">
+                <h4 class="font-heading font-semibold leading-snug">
+                  {item.website?.url ? (
+                    <a
+                      href={item.website.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="transition hover:text-primary"
+                    >
+                      {item.school}
+                    </a>
+                  ) : (
+                    item.school
+                  )}
+                </h4>
+                {item.period && (
+                  <span class="shrink-0 text-xs text-muted-foreground">{item.period}</span>
+                )}
+              </div>
+              {(item.degree || item.area) && (
+                <p class="mt-2 text-sm text-foreground/90">
+                  {[item.degree, item.area].filter(Boolean).join(" · ")}
+                </p>
+              )}
+              {item.location && (
+                <p class="mt-1 text-xs text-muted-foreground">📍 {item.location}</p>
+              )}
+              {item.description && <div set:html={item.description} class={proseClass} />}
+            </article>
+          ))
+        }
+      </div>
+    </div>
+
+    <!-- Column 2: Languages -->
+    <div>
+      <h3 class="mb-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+        {langSection.title}
+      </h3>
+      <div class="space-y-4">
+        {
+          languages.map((l) => (
+            <article class="reveal rounded-lg border border-border bg-card/50 p-5 transition hover:border-primary/50">
+              <div class="flex items-center justify-between gap-3">
+                <h4 class="font-heading font-semibold">{l.language}</h4>
+                <span class="shrink-0 text-sm text-muted-foreground">{l.fluency}</span>
+              </div>
+              <div class="mt-3 flex gap-1" aria-label={`${l.fluency} (${l.level}/5)`}>
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <span
+                    class:list={[
+                      "h-1.5 w-full rounded-full",
+                      i < l.level ? "bg-brand-gradient" : "bg-border",
+                    ]}
+                  />
+                ))}
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</Section>
