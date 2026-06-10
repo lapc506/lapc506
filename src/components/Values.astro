@@ -8,68 +8,90 @@ const { data } = Astro.props;
 const { ui, portfolio } = data;
 const section = ui.sections.values;
 const { items, thinkTanks } = portfolio.values;
+const civic = portfolio.civicWork;
 
-// Derive the two group labels from the section title ("Values & Think Tanks").
 const [valuesLabel, thinkTanksLabel] = section.title.split("&").map((s) => s.trim());
+const communityLabel = ui.sections.civic.title;
 ---
 
 <Section id="values" title={section.title} subtitle={section.subtitle} muted>
   <div class="grid gap-10 md:grid-cols-2">
-    <!-- Group 1: Values (non-linked chips) -->
-    <div>
-      <h3 class="mb-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-        {valuesLabel || "Values"}
-      </h3>
-      <ul class="flex flex-wrap gap-2">
-        {
-          items.map((v) => (
-            <li class="reveal pill">{v.name}</li>
-          ))
-        }
-      </ul>
+    <!-- Column 1: Values + Think Tanks -->
+    <div class="space-y-8">
+      <div>
+        <h3 class="mb-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          {valuesLabel || "Values"}
+        </h3>
+        <ul class="flex flex-wrap gap-2">
+          {items.map((v) => <li class="reveal pill">{v.name}</li>)}
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="mb-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
+          {thinkTanksLabel || "Think Tanks"}
+        </h3>
+        <ul class="flex flex-col gap-2">
+          {
+            thinkTanks.map((t) => (
+              <li class="reveal">
+                {t.url ? (
+                  <a
+                    href={t.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="group flex items-center justify-between gap-3 rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm transition hover:border-primary/50"
+                  >
+                    <span class="font-medium text-foreground">{t.name}</span>
+                    <span aria-hidden="true" class="text-muted-foreground transition group-hover:text-primary">↗</span>
+                  </a>
+                ) : (
+                  <span class="flex rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm font-medium text-foreground">
+                    {t.name}
+                  </span>
+                )}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
     </div>
 
-    <!-- Group 2: Think tanks (linked chips) -->
+    <!-- Column 2: Community Volunteering -->
     <div>
       <h3 class="mb-4 text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-        {thinkTanksLabel || "Think Tanks"}
+        {communityLabel}
       </h3>
-      <ul class="flex flex-col gap-2">
+      <div class="space-y-4">
         {
-          thinkTanks.map((t) => (
-            <li class="reveal">
-              {t.url ? (
-                <a
-                  href={t.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="group flex items-center justify-between gap-3 rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm transition hover:border-primary/50"
-                >
-                  <span class="font-medium text-foreground">{t.name}</span>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    aria-hidden="true"
-                    class="h-4 w-4 shrink-0 text-muted-foreground transition group-hover:text-primary"
-                  >
-                    <path d="M7 17 17 7" />
-                    <path d="M7 7h10v10" />
-                  </svg>
-                </a>
-              ) : (
-                <span class="flex items-center rounded-lg border border-border bg-card/50 px-4 py-2.5 text-sm font-medium text-foreground">
-                  {t.name}
-                </span>
+          civic.map((c) => (
+            <article class="reveal rounded-lg border border-border bg-card/50 p-5 transition hover:border-primary/50">
+              <div class="flex items-start justify-between gap-3">
+                <h4 class="font-heading font-semibold leading-snug text-foreground">{c.organization}</h4>
+                <span class="shrink-0 font-mono text-xs text-muted-foreground">{c.period}</span>
+              </div>
+              <p class="mt-1 text-sm font-medium text-primary">{c.role}</p>
+              <ul class="mt-3 list-disc space-y-1 pl-5 text-sm text-muted-foreground marker:text-primary">
+                {c.highlights.map((h) => <li>{h}</li>)}
+              </ul>
+              {c.links.length > 0 && (
+                <div class="mt-3 flex flex-wrap gap-2">
+                  {c.links.map((l) => (
+                    <a
+                      href={l.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="inline-flex items-center gap-1 rounded-md border border-border bg-background/40 px-2.5 py-1 text-xs font-medium text-muted-foreground transition hover:border-primary hover:text-primary"
+                    >
+                      {l.label} ↗
+                    </a>
+                  ))}
+                </div>
               )}
-            </li>
+            </article>
           ))
         }
-      </ul>
+      </div>
     </div>
   </div>
 </Section>

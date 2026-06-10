@@ -6,28 +6,33 @@
     "items": [
       {
         "name": "Vertivolatam",
-        "sector": "AgriTech e IoT",
-        "url": "https://github.com/vertivolatam"
+        "sector": "AgriTech & IoT",
+        "url": "https://vertivolatam.github.io/monorepo/",
+        "description": "Startup de agricultura vertical urbana — microinvernaderos aeropónicos autónomos. Serverpod, Flutter, Raspberry Pi (Balena), EMQX MQTT, K8s + ArgoCD GitOps. Pre-seed de US $9.500 (Bridge for Billions, 2021)."
       },
       {
         "name": "AduaNext",
-        "sector": "Aduanas y LogisticsTech",
-        "url": "https://github.com/lapc506/proformafasttrack-monorepo"
+        "sector": "Aduanas & LogisticsTech",
+        "url": "https://github.com/lapc506/proformafasttrack-monorepo",
+        "description": "Agregador de proformas para agencias aduaneras que conecta comercios con agencias para solicitudes de cotización. Full-stack en Dart."
       },
       {
         "name": "AltruPets",
         "sector": "Bienestar Animal",
-        "url": "https://altrupets.app/"
+        "url": "https://altrupets.github.io/monorepo/",
+        "description": "App Flutter para protección animal: coordinación de rescates, hogares de acogida, campañas de crowdfunding y denuncias anónimas de maltrato."
       },
       {
         "name": "HabitaNexus",
         "sector": "PropTech",
-        "url": "https://github.com/lapc506/habitanexus"
+        "url": "https://habitanexus.github.io/monorepo/",
+        "description": "Marketplace de alquiler de vivienda de largo plazo con sistema de negociación digital de contratos. Construido con Flutter."
       },
       {
         "name": "KeikoLatam",
-        "sector": "EdTech y Web3",
-        "url": "https://keikolatam.github.io/dapp-monorepo/"
+        "sector": "EdTech & Web3",
+        "url": "https://keikolatam.github.io/dapp-monorepo/",
+        "description": "Colaboración educativa descentralizada con un Life Learning Passport en blockchain (Starknet). Flutter, Dart, GraphQL, gRPC, Cairo, Redis Streams."
       }
     ]
   },

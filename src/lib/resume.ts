@@ -83,6 +83,7 @@ export interface VentureItem {
   name: string;
   sector: string;
   url: string;
+  description?: string;
 }
 export interface Ventures {
   name: string;

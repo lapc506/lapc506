@@ -7,27 +7,32 @@
       {
         "name": "Vertivolatam",
         "sector": "AgriTech & IoT",
-        "url": "https://github.com/vertivolatam"
+        "url": "https://vertivolatam.github.io/monorepo/",
+        "description": "Urban vertical farming startup — autonomous aeroponic microgreenhouses. Serverpod, Flutter, Raspberry Pi (Balena), EMQX MQTT, K8s + ArgoCD GitOps. US $9,500 pre-seed (Bridge for Billions, 2021)."
       },
       {
         "name": "AduaNext",
         "sector": "Customs & LogisticsTech",
-        "url": "https://github.com/lapc506/proformafasttrack-monorepo"
+        "url": "https://github.com/lapc506/proformafasttrack-monorepo",
+        "description": "Customs-agency proforma bid aggregator connecting merchants with agencies for quote requests. Dart full-stack."
       },
       {
         "name": "AltruPets",
         "sector": "Animal Welfare",
-        "url": "https://altrupets.app/"
+        "url": "https://altrupets.github.io/monorepo/",
+        "description": "Flutter app for animal protection: rescue coordination, foster homes, crowdfunding campaigns, and anonymous abuse reports."
       },
       {
         "name": "HabitaNexus",
         "sector": "PropTech",
-        "url": "https://github.com/lapc506/habitanexus"
+        "url": "https://habitanexus.github.io/monorepo/",
+        "description": "Long-term housing rental marketplace with a digital lease-negotiation system. Built with Flutter."
       },
       {
         "name": "KeikoLatam",
         "sector": "EdTech & Web3",
-        "url": "https://keikolatam.github.io/dapp-monorepo/"
+        "url": "https://keikolatam.github.io/dapp-monorepo/",
+        "description": "Decentralized educational collaboration with a blockchain Life Learning Passport (Starknet). Flutter, Dart, GraphQL, gRPC, Cairo, Redis Streams."
       }
     ]
   },
