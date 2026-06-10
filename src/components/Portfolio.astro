@@ -7,9 +7,8 @@ import Values from "./Values.astro";
 import Skills from "./Skills.astro";
 import Certifications from "./Certifications.astro";
 import Services from "./Services.astro";
-import Education from "./Education.astro";
+import EducationLanguages from "./EducationLanguages.astro";
 import Communities from "./Communities.astro";
-import Languages from "./Languages.astro";
 import IdeasInterests from "./IdeasInterests.astro";
 
 interface Props {
@@ -26,7 +25,6 @@ const data = getResume(locale);
 <Skills data={data} />
 <Certifications data={data} />
 <Services data={data} />
-<Education data={data} />
+<EducationLanguages data={data} />
 <Communities data={data} />
-<Languages data={data} />
 <IdeasInterests data={data} />
